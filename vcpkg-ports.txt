@@ -1,5 +1,6 @@
 7zip[core]
 allegro5[core]
+antlr4[core]
 aom[core]
 argagg[core]
 argh[core]
