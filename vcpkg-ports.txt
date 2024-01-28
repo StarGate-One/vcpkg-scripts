@@ -215,6 +215,7 @@ physfs
 pixman
 pkgconf
 platform-folders
+podofo[fontconfig,fontmanager]
 poly2tri
 polyclipping
 protobuf[zlib]
