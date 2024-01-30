@@ -119,9 +119,10 @@ highway[contrib]
 hwloc
 icu[tools]
 imath
+imgui-node-editor
 imgui-sfml
 imguizmo
-imgui[allegro5-binding,docking-experimental,dx10-binding,dx11-binding,dx12-binding,dx9-binding,freetype,glfw-binding,glut-binding,libigl-imgui,opengl3-binding,sdl2-binding,sdl2-renderer-binding,vulkan-binding,wchar32,win32-binding]
+imgui[allegro5-binding,docking-experimental,dx10-binding,dx11-binding,dx12-binding,dx9-binding,freetype,freetype-lunasvg,glfw-binding,glut-binding,libigl-imgui,opengl3-binding,sdl2-binding,sdl2-renderer-binding,vulkan-binding,wchar32,win32-binding]
 implot
 inih[cpp]
 iniparser
@@ -179,6 +180,7 @@ libyuv
 libzippp[encryption]
 libzip[bzip2,commoncrypto,default-aes,liblzma,mbedtls,openssl,wincrypto,zstd]
 lunarg-vulkantools
+lunasvg
 lz4
 lzo
 mathgl[arma,fltk,gif,glut,gsl,hdf5,jpeg,opengl,png,zlib]
