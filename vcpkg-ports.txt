@@ -18,6 +18,7 @@ aurora
 b64
 bddisasm
 berkeleydb
+better-enums
 bgfx[multithreaded,tools]
 bigint
 blake3

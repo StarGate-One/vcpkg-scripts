@@ -162,5 +162,5 @@
     @cd %_DEV_ROOT_DRV%\
 )
 
-"C:\Program Files\PowerShell\7\pwsh.exe" -NoLogo -NoExit -NoProfile -ExecutionPolicy Bypass -WorkingDirectory D:\vcpkg
+@rem "C:\Program Files\PowerShell\7\pwsh.exe" -NoLogo -NoExit -NoProfile -ExecutionPolicy Bypass -WorkingDirectory D:\vcpkg
 :end-script
