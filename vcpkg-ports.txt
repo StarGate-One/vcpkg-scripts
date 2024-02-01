@@ -130,6 +130,7 @@ iniparser
 irrlicht[tools,unicode]
 jasper[opengl]
 jbigkit
+jhasse-poly2tri
 json-c
 jsoncpp
 jxrlib
@@ -219,7 +220,6 @@ pixman
 pkgconf
 platform-folders
 podofo[fontconfig,fontmanager]
-poly2tri
 polyclipping
 protobuf[zlib]
 pthread
