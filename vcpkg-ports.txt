@@ -116,6 +116,7 @@ gsl
 gzip-hpp
 harfbuzz[cairo,freetype,glib,graphite2,icu,introspection]
 hdf5[szip,zlib]
+hello-imgui[experimental-dx11-binding,experimental-dx12-binding,experimental-vulkan-binding,freetype-lunasvg,glfw-binding,opengl3-binding,sdl2-binding]
 highway[contrib]
 hwloc
 icu[tools]
