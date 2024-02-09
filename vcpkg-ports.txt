@@ -140,6 +140,7 @@ lapack
 lapack-reference[blas-select,noblas]
 lcms
 leptonica
+lerc
 libadlmidi[dosbox-emulator,embedded-banks,java-emulator,midi-sequencer,mus,nuked-emulator,opal-emulator,xmi]
 libarchive[bzip2,crypto,libxml2,lz4,lzma,openssl,zstd]
 libavif[aom]
@@ -266,7 +267,7 @@ szip
 tbb
 tgui[sdl2,sfml,tool]
 thor
-tiff[cxx,jpeg,libdeflate,lzma,tools,zip,zstd]
+tiff[cxx,jpeg,lerc,libdeflate,lzma,tools,zip,zstd]
 tinyexr
 tinyfiledialogs
 tinyxml
