@@ -38,6 +38,7 @@ clockutils
 color-console
 cpp-base64
 cppfs[ssh]
+cpptrace
 cpu-features[tools]
 cpuid
 cpuinfo[tools]
@@ -143,6 +144,7 @@ leptonica
 lerc
 libadlmidi[dosbox-emulator,embedded-banks,java-emulator,midi-sequencer,mus,nuked-emulator,opal-emulator,xmi]
 libarchive[bzip2,crypto,libxml2,lz4,lzma,openssl,zstd]
+libassert
 libavif[aom]
 libconfig
 libdeflate[compression,decompression,gzip,zlib]
@@ -187,6 +189,7 @@ lunarg-vulkantools
 lunasvg
 lz4
 lzo
+magic-enum
 mathgl[arma,fltk,gif,glut,gsl,hdf5,jpeg,opengl,png,zlib]
 mbedtls[pthreads]
 milerius-sfml-imgui
