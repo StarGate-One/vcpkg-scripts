@@ -241,7 +241,7 @@ robin-hood-hashing
 safeint
 scintilla
 sdl2-gfx
-sdl2-image[libjpeg-turbo,libjxl,libwebp,tiff]
+sdl2-image[libjpeg-turbo,libwebp,tiff]
 sdl2-mixer-ext[ffmpeg,fluidsynth,libadlmidi,libflac,libgme,libmodplug,libopnmidi,libvorbis,libxmp,mpg123,nativemidi,opusfile,timidity,wavpack]
 sdl2-mixer[fluidsynth,libflac,libmodplug,mpg123,opusfile]
 sdl2-net
@@ -257,7 +257,7 @@ shaderwriter[glsl,hlsl,spirv]
 simage[avienc,giflib,jpeg,oggvorbis,png,sndfile,tiff,zlib]
 simdutf
 skcrypter
-skia[direct3d,fontconfig,freetype,gl,harfbuzz,vulkan]
+skia[direct3d,fontconfig,freetype,gl,vulkan]
 smpeg2
 soil2
 spirv-cross
@@ -293,6 +293,7 @@ vk-bootstrap
 vkfft
 volk
 vs-yasm
+vsg
 vsgimgui
 vulkan
 vulkan-headers
