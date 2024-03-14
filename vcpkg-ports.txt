@@ -59,6 +59,7 @@ debug-assert
 decimal-for-cpp
 devil[jasper,lcms,libjpeg,libpng,openexr,tiff]
 dimcli
+directx12-agility
 directx-dxc
 directx-headers
 directxmath
