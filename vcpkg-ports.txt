@@ -244,7 +244,7 @@ scintilla
 sdl2-gfx
 sdl2-image[libjpeg-turbo,libwebp,tiff]
 sdl2-mixer-ext[ffmpeg,fluidsynth,libadlmidi,libflac,libgme,libmodplug,libopnmidi,libvorbis,libxmp,mpg123,nativemidi,opusfile,timidity,wavpack]
-sdl2-mixer[fluidsynth,libflac,libmodplug,mpg123,opusfile]
+sdl2-mixer[fluidsynth,libflac,libmodplug,mpg123,opusfile,wavpack]
 sdl2-net
 sdl2-rtf
 sdl2-sound[shared,timidity]
