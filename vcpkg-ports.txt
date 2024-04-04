@@ -258,7 +258,7 @@ shaderwriter[glsl,hlsl,spirv]
 simage[avienc,giflib,jpeg,oggvorbis,png,sndfile,tiff,zlib]
 simdutf
 skcrypter
-skia[direct3d,fontconfig,freetype,gl,vulkan]
+skia[direct3d,fontconfig,freetype,gl,harfbuzz,icu,vulkan]
 smpeg2
 soil2
 spirv-cross
