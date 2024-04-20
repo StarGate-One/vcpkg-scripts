@@ -142,6 +142,11 @@
         @timeout /T 5 > nul
     )
     @set TMP=%_VCPKG_TEMP_DIR%\tmp
+
+    @if exist %_VCPKG_TEMP_DIR%\tmp (
+        @del /f %_VCPKG_TEMP_DIR%\tmp\_CL_*
+        @timeout /T 5 > nul
+    )
 )
 @rem ) else (
 @rem    @set TEMP=%_DEV_TEMP_DIR%
