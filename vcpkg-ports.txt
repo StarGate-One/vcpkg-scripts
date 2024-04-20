@@ -217,7 +217,7 @@ opengl-registry
 openjpeg
 openssl[fips,tools]
 opusfile
-opus[avx]
+opus[avx2]
 pcre
 pcre2[jit,platform-default-features]
 pdcurses
