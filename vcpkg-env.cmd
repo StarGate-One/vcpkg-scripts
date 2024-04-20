@@ -99,6 +99,7 @@
 @set VCPKG_USE_NUGET_CACHE=
 @set VCPKG_VISUAL_STUDIO_PATH=%VSINSTALLDIR:~0,-1%
 @set VCPKG_XBOX_CONSOLE_TARGET=
+@set X_VCPKG_APPINSTALL_DEPS_INSTALL=ON
 @set X_VCPKG_ASSET_SOURCES=clear
 
 @set COPYCMD=/V /Y /Z
@@ -144,7 +145,7 @@
     @set TMP=%_VCPKG_TEMP_DIR%\tmp
 
     @if exist %_VCPKG_TEMP_DIR%\tmp (
-        @del /f %_VCPKG_TEMP_DIR%\tmp\_CL_*
+        @del /f %_VCPKG_TEMP_DIR%\tmp\_CL_* > nul 2>&1
         @timeout /T 5 > nul
     )
 )
