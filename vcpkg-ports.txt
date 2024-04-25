@@ -79,6 +79,7 @@ dxut
 eabase
 eastl
 eathread
+easyloggingpp
 effects11
 efsw
 egl-registry
@@ -120,6 +121,7 @@ harfbuzz[cairo,freetype,glib,graphite2,icu,introspection]
 hdf5[szip,zlib]
 hello-imgui[experimental-dx11-binding,experimental-dx12-binding,experimental-vulkan-binding,freetype-lunasvg,glfw-binding,opengl3-binding,sdl2-binding]
 highway[contrib]
+hexl
 hwloc
 icu[tools]
 imath
@@ -251,7 +253,7 @@ sdl2-sound[shared,timidity]
 sdl2-ttf[harfbuzz]
 sdl2pp
 sdl2[samplerate,vulkan]
-seal[ms-gsl,no-throw-tran,zlib,zstd]
+seal[hexl,ms-gsl,no-throw-tran,zlib,zstd]
 sfml
 shaderc
 shaderwriter[glsl,hlsl,spirv]
