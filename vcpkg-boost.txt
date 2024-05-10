@@ -19,6 +19,7 @@ boost-callable-traits
 boost-chrono
 boost-circular-buffer
 boost-cmake
+boost-charconv
 boost-cobalt
 boost-compat
 boost-compatibility
@@ -120,6 +121,7 @@ boost-rational
 boost-redis
 boost-regex[icu]
 boost-safe-numerics
+boost-scope
 boost-scope-exit
 boost-serialization
 boost-signals2
@@ -169,6 +171,7 @@ openssl[fips,tools]
 pkgconf
 python3
 sqlite3[json1]
+vcpkg-boost
 vcpkg-cmake
 vcpkg-cmake-config
 vcpkg-cmake-get-vars
