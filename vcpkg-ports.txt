@@ -181,6 +181,8 @@ libtheora
 libtomcrypt
 libtommath
 libunistring
+libusb
+libusb-win32
 libvorbis
 libwebp[anim,cwebp,dwebp,extras,gif2webp,img2webp,info,libwebpmux,mux,nearlossless,simd,swap16bitcsp,unicode,vwebp]
 libxml2[ftp,http,iconv,legacy,lzma,tools,zlib]
@@ -253,6 +255,7 @@ sdl2-sound[shared,timidity]
 sdl2-ttf[harfbuzz]
 sdl2pp
 sdl2[samplerate,vulkan]
+sdl3[ffmpeg,libusb,vulkan]
 seal[hexl,ms-gsl,no-throw-tran,zlib,zstd]
 sfml
 shaderc
