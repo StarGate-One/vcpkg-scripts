@@ -46,7 +46,7 @@ crc32c
 cryptopp[pem-pack]
 ctemplate
 curlpp
-curl[brotli,http2,idn2,mbedtls,non-http,openssl,schannel,ssh,ssl,sspi,tool,winssl,zstd]
+curl[brotli,http2,idn2,non-http,openssl,schannel,ssh,ssl,sspi,tool,winssl,zstd]
 cwalk
 cxxopts
 d3d12-memory-allocator
