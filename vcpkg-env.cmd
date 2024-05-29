@@ -142,7 +142,7 @@
         @forfiles /p %_VCPKG_TEMP_DIR%\temp /s /m TmP* /D -0 /C "cmd /c del @path" > nul 2>&1
         @rem del /f %_VCPKG_TEMP_DIR%\tmp\_CL_* > nul 2>&1
         @timeout /T 5 > nul
-
+    )
     @if not exist %_VCPKG_TEMP_DIR%\tmp (
         @mkdir %_VCPKG_TEMP_DIR%\tmp
         @timeout /T 5 > nul

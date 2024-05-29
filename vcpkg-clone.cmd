@@ -123,7 +123,15 @@
         @mkdir %_VCPKG_OVERLAY_DIR%
         @timeout /T 5 > nul
     )
+    @if not exist %_VCPKG_OVERLAY_PORTS% (
+        @mkdir %_VCPKG_OVERLAY_PORTS%
+        @timeout /T 5 > nul
+    )
     @"%_VCPKG_XCOPY_EXE%" %_VCPKG_GIT_LOCAL_OVERLAY_PORTS% %_VCPKG_OVERLAY_PORTS% %XCOPY_CMD%
+    @if not exist %_VCPKG_OVERLAY_TRIPLETS% (
+        @mkdir %_VCPKG_OVERLAY_TRIPLETS%
+        @timeout /T 5 > nul
+    )
     @"%_VCPKG_XCOPY_EXE%" %_VCPKG_GIT_LOCAL_OVERLAY_TRIPLETS% %_VCPKG_OVERLAY_TRIPLETS% %XCOPY_CMD%
 )
 
