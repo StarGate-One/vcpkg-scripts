@@ -104,7 +104,7 @@ gettimeofday
 gflags
 giflib
 gl2ps
-gl3w
+gl3w[ext]
 glad[egl,extensions,gl-api-latest,gles1-api-latest,glsc2-api-latest,loader,wgl]
 glew
 glfw3
