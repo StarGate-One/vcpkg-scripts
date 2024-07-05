@@ -163,7 +163,7 @@ libiconv
 libidn2
 libjpeg-turbo
 libjxl[tools]
-liblzma
+liblzma[tools]
 libmikmod
 libmodplug
 libogg
