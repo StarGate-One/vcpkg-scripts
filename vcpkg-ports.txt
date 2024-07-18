@@ -261,7 +261,7 @@ sfml
 shaderc
 shaderwriter[glsl,hlsl,spirv]
 simage[avienc,giflib,jpeg,oggvorbis,png,sndfile,tiff,zlib]
-simdutf
+simdutf[tools]
 skcrypter
 skia[direct3d,fontconfig,freetype,gl,harfbuzz,icu,vulkan]
 smpeg2
