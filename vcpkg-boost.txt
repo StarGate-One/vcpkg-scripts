@@ -111,7 +111,7 @@ boost-property-map-parallel
 boost-property-tree
 boost-proto
 boost-ptr-container
-boost-python[python3]
+boost-python
 boost-qvm
 boost-random
 boost-range
