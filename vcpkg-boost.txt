@@ -163,7 +163,7 @@ bzip2[tool]
 expat
 icu[tools]
 libffi
-liblzma
+liblzma[tools]
 mpi
 msmpi
 openssl[fips,tools]
