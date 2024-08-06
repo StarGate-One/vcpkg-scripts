@@ -255,7 +255,7 @@ sdl2-rtf
 sdl2-sound[shared,timidity]
 sdl2-ttf[harfbuzz]
 sdl2[samplerate,vulkan]
-sdl2pp[sdl2-image,sdl2-mixer,sdl2-ttf]
+sdl2pp
 seal[hexl,ms-gsl,no-throw-tran,zlib,zstd]
 sfml
 shaderc
