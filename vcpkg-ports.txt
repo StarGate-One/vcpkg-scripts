@@ -32,6 +32,7 @@ cairo[fontconfig,freetype,gobject]
 cairomm
 cargs
 catch2
+cgltf
 check
 chipmunk
 cjson
@@ -73,6 +74,7 @@ discord-game-sdk
 dlfcn-win32
 double-conversion
 draco
+drlibs
 dstorage
 dx
 dxsdk-d3dx
@@ -200,9 +202,11 @@ mathgl[arma,fltk,gif,glut,gsl,hdf5,jpeg,opengl,png,zlib]
 mbedtls[pthreads]
 milerius-sfml-imgui
 mimalloc
+miniaudio
 miniz
 minizip-ng[bzip2,lzma,openssl,pkcrypt,wzaes,zlib,zstd]
 minizip[bzip2]
+mmx
 mp3lame
 mpg123
 mpi
@@ -237,6 +241,7 @@ pthread
 pthreads
 pugixml
 python3
+qoi
 qt5-base
 quirc
 rapidjson
