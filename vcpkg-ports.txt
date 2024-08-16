@@ -246,7 +246,7 @@ qt5-base
 quirc
 rapidjson
 raygui
-raylib[hidpi,use-audio]
+raylib[use-audio]
 readline-win32
 robin-hood-hashing
 safeint
