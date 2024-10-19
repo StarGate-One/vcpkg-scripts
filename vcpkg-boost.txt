@@ -78,7 +78,7 @@ boost-locale[icu]
 boost-lockfree
 boost-log
 boost-logic
-boost-math
+boost-math[legacy]
 boost-metaparse
 boost-move
 boost-mp11
@@ -91,7 +91,6 @@ boost-multiprecision
 boost-mysql
 boost-nowide
 boost-numeric-conversion
-boost-odeint
 boost-odeint[mpi]
 boost-optional
 boost-outcome
@@ -127,7 +126,7 @@ boost-signals2
 boost-smart-ptr
 boost-sort
 boost-spirit
-boost-stacktrace
+boost-stacktrace[windbg]
 boost-statechart
 boost-static-assert
 boost-static-string
