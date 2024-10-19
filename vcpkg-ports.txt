@@ -149,7 +149,7 @@ lcms
 leptonica
 lerc
 libadlmidi[dosbox-emulator,embedded-banks,java-emulator,midi-sequencer,mus,nuked-emulator,opal-emulator,xmi]
-libarchive[bzip2,crypto,libxml2,lz4,lzma,openssl,zstd]
+libarchive[bzip2,crypto,libxml2,lz4,lzma,lzo,zstd]
 libassert
 libavif[aom]
 libconfig
