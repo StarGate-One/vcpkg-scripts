@@ -203,6 +203,7 @@ mbedtls[pthreads]
 milerius-sfml-imgui
 mimalloc
 miniaudio
+minimp3
 miniz
 minizip-ng[bzip2,lzma,openssl,pkcrypt,wzaes,zlib,zstd]
 minizip[bzip2]
