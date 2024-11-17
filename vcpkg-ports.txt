@@ -149,6 +149,7 @@ lcms
 leptonica
 lerc
 libadlmidi[dosbox-emulator,embedded-banks,java-emulator,midi-sequencer,mus,nuked-emulator,opal-emulator,xmi]
+libaec
 libarchive[bzip2,crypto,libxml2,lz4,lzma,lzo,zstd]
 libassert
 libavif[aom]
@@ -278,7 +279,6 @@ spirv-reflect
 spirv-tools
 sqlite3[json1]
 stb
-szip
 tbb
 tgui[sdl2,sfml,tool]
 thor
