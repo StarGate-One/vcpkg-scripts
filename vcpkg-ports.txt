@@ -201,7 +201,6 @@ lzo
 magic-enum
 mathgl[arma,fltk,gif,glut,gsl,hdf5,jpeg,opengl,png,zlib]
 mbedtls[pthreads]
-milerius-sfml-imgui
 mimalloc
 miniaudio
 minimp3
