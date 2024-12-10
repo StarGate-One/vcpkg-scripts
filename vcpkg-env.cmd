@@ -138,22 +138,22 @@
     )
     @set TEMP=%_VCPKG_TEMP_DIR%\temp
 
-    @if exist %_VCPKG_TEMP_DIR%\temp (
-        @forfiles /p %_VCPKG_TEMP_DIR%\temp /s /m TmP* /D -0 /C "cmd /c del @path" > nul 2>&1
+rem    @if exist %_VCPKG_TEMP_DIR%\temp (
+rem        @forfiles /p %_VCPKG_TEMP_DIR%\temp /s /m TmP* /D -0 /C "cmd /c del @path" > nul 2>&1
         @rem del /f %_VCPKG_TEMP_DIR%\tmp\_CL_* > nul 2>&1
-        @timeout /T 5 > nul
-    )
+rem        @timeout /T 5 > nul
+rem    )
     @if not exist %_VCPKG_TEMP_DIR%\tmp (
         @mkdir %_VCPKG_TEMP_DIR%\tmp
         @timeout /T 5 > nul
     )
     @set TMP=%_VCPKG_TEMP_DIR%\tmp
 
-    @if exist %_VCPKG_TEMP_DIR%\tmp (
-        @forfiles /p %_VCPKG_TEMP_DIR%\tmp /s /m _CL_* /D -0 /C "cmd /c del @path" > nul 2>&1
+rem    @if exist %_VCPKG_TEMP_DIR%\tmp (
+rem        @forfiles /p %_VCPKG_TEMP_DIR%\tmp /s /m _CL_* /D -0 /C "cmd /c del @path" > nul 2>&1
         @rem del /f %_VCPKG_TEMP_DIR%\tmp\_CL_* > nul 2>&1
-        @timeout /T 5 > nul
-    )
+rem        @timeout /T 5 > nul
+rem     )
 )
 @rem ) else (
 @rem    @set TEMP=%_DEV_TEMP_DIR%
