@@ -177,6 +177,7 @@ vcpkg-get-python
 vcpkg-get-python-packages
 vcpkg-gfortran
 vcpkg-gn
+vcpkg-make
 vcpkg-msbuild[pkg-config]
 vcpkg-pkgconfig-get-modules
 vcpkg-tool-gn

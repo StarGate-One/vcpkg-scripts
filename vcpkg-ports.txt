@@ -22,6 +22,7 @@ berkeleydb
 better-enums
 bgfx[multithreaded,tools]
 bigint
+bit7z[regex-matching]
 blake3
 blas
 botan[amalgamation,zlib]
@@ -105,6 +106,7 @@ gettext-libintl
 gettext[nls,runtime-tools,tools]
 gettimeofday
 gflags
+ghc-filesystem
 giflib
 gl2ps
 gl3w[ext]
@@ -298,6 +300,7 @@ vcpkg-get-python
 vcpkg-get-python-packages
 vcpkg-gfortran
 vcpkg-gn
+vcpkg-make
 vcpkg-msbuild[pkg-config]
 vcpkg-pkgconfig-get-modules
 vcpkg-tool-gn
