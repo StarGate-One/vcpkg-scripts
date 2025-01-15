@@ -282,7 +282,6 @@ sqlite3[json1]
 stb
 tbb
 tgui[sdl2,sfml,tool]
-thor
 tiff[cxx,jpeg,lerc,libdeflate,lzma,tools,zip,zstd]
 tinyexr
 tinyfiledialogs
