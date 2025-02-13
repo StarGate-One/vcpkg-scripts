@@ -132,7 +132,7 @@ icu[tools]
 imath
 imgui-node-editor
 imgui-sfml
-imgui[allegro5-binding,docking-experimental,dx10-binding,dx11-binding,dx12-binding,dx9-binding,freetype,glfw-binding,glut-binding,libigl-imgui,opengl3-binding,sdl2-binding,sdl2-renderer-binding,vulkan-binding,wchar32,win32-binding]
+imgui[allegro5-binding,docking-experimental,dx10-binding,dx11-binding,dx12-binding,dx9-binding,freetype,freetype-svg,glfw-binding,glut-binding,libigl-imgui,opengl3-binding,sdl2-binding,sdl2-renderer-binding,vulkan-binding,wchar32,win32-binding]
 imguizmo
 implot
 inih[cpp]
@@ -238,6 +238,7 @@ pixman
 pkgconf
 platform-folders
 plutovg
+plutosvg[freetype]
 podofo[fontconfig,fontmanager]
 polyclipping
 protobuf[zlib]
