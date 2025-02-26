@@ -1,6 +1,6 @@
 7zip
 abseil
-allegro5
+allegro5[direct3d,opengl]
 antlr4
 aom
 argagg
@@ -91,7 +91,6 @@ eigen3
 expat
 fastio
 fastlz
-ffmpeg[avcodec,avdevice,avfilter,avformat,swresample,swscale]
 flatbuffers
 fltk[opengl]
 fluidsynth[buildtools,sndfile]
@@ -124,7 +123,7 @@ gsl
 gzip-hpp
 harfbuzz[cairo,freetype,glib,graphite2,icu,introspection]
 hdf5[szip,zlib]
-hello-imgui[experimental-dx11-binding,experimental-dx12-binding,experimental-vulkan-binding,glfw-binding,opengl3-binding,sdl2-binding]
+hello-imgui[experimental-dx11-binding,experimental-dx12-binding,experimental-vulkan-binding,glfw-binding,opengl3-binding]
 hexl
 highway[contrib]
 hwloc
@@ -132,7 +131,7 @@ icu[tools]
 imath
 imgui-node-editor
 imgui-sfml
-imgui[allegro5-binding,docking-experimental,dx10-binding,dx11-binding,dx12-binding,dx9-binding,freetype,freetype-svg,glfw-binding,glut-binding,libigl-imgui,opengl3-binding,sdl2-binding,sdl2-renderer-binding,vulkan-binding,wchar32,win32-binding]
+imgui[allegro5-binding,docking-experimental,dx10-binding,dx11-binding,dx12-binding,dx9-binding,freetype,freetype-svg,glfw-binding,glut-binding,libigl-imgui,opengl3-binding,sdl3-binding,sdl3-renderer-binding,vulkan-binding,wchar32,win32-binding]
 imguizmo
 implot
 inih[cpp]
@@ -220,7 +219,6 @@ nanosvg
 nghttp2
 nghttp3
 ngtcp2
-ogre[assimp,freeimage,openexr,overlay,strict,tools,zip,zziplib]
 openal-soft
 openblas
 openexr
@@ -237,8 +235,8 @@ physfs
 pixman
 pkgconf
 platform-folders
-plutovg
 plutosvg[freetype]
+plutovg
 podofo[fontconfig,fontmanager]
 polyclipping
 protobuf[zlib]
@@ -256,16 +254,9 @@ readline-win32
 robin-hood-hashing
 safeint
 scintilla
-sdl2-gfx
-sdl2-image[libjpeg-turbo,libwebp,tiff]
-sdl2-mixer-ext[ffmpeg,fluidsynth,libadlmidi,libflac,libgme,libmodplug,libopnmidi,libvorbis,libxmp,mpg123,nativemidi,opusfile,timidity,wavpack]
-sdl2-mixer[fluidsynth,libflac,libmodplug,mpg123,opusfile,wavpack]
-sdl2-net
-sdl2-rtf
-sdl2-sound[shared,timidity]
-sdl2-ttf[harfbuzz]
-sdl2[samplerate,vulkan]
-sdl2pp
+sdl3-image[jpeg,png,tiff,webp]
+sdl3-ttf[harfbuzz,svg]
+sdl3[vulkan]
 seal[hexl,ms-gsl,no-throw-tran,zlib,zstd]
 sfml
 shaderc
@@ -274,7 +265,6 @@ simage[avienc,giflib,jpeg,oggvorbis,png,sndfile,tiff,zlib]
 simdutf[tools]
 skcrypter
 skia[direct3d,fontconfig,freetype,gl,harfbuzz,icu,vulkan]
-smpeg2
 soil2
 spirv-cross
 spirv-headers
@@ -283,7 +273,6 @@ spirv-tools
 sqlite3[json1]
 stb
 tbb
-tgui[sdl2,sfml,tool]
 tiff[cxx,jpeg,lerc,libdeflate,lzma,tools,zip,zstd]
 tinyexr
 tinyfiledialogs
@@ -318,7 +307,6 @@ vulkan-headers
 vulkan-loader
 vulkan-memory-allocator
 vulkan-memory-allocator-hpp
-vulkan-sdk-components[tools]
 vulkan-tools
 vulkan-utility-libraries
 vulkan-validationlayers
@@ -328,7 +316,6 @@ wil
 wincrypt
 winreg
 wtl
-wxwidgets[debug-support,example,fonts,media,sound,webview]
 xaudio2redist
 xorstr
 yasm-tool-helper
