@@ -14,6 +14,7 @@ boost-atomic
 boost-beast
 boost-bimap
 boost-bind
+boost-build
 boost-callable-traits
 boost-charconv
 boost-chrono
@@ -74,14 +75,17 @@ boost-lambda2
 boost-leaf
 boost-lexical-cast
 boost-local-function
+boost-locale
 boost-locale[icu]
 boost-lockfree
 boost-log
 boost-logic
+boost-math
 boost-math[legacy]
 boost-metaparse
 boost-move
 boost-mp11
+boost-mpi
 boost-mpi[python3]
 boost-mpl
 boost-msm
@@ -96,6 +100,7 @@ boost-optional
 boost-outcome
 boost-parameter
 boost-parameter-python
+boost-parser
 boost-pfr
 boost-phoenix
 boost-poly-collection
@@ -157,6 +162,7 @@ boost-wave
 boost-winapi
 boost-xpressive
 boost-yap
+boost[cobalt,mpi]
 boost[mpi]
 bzip2[tool]
 expat
