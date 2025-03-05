@@ -91,6 +91,7 @@ eigen3
 expat
 fastio
 fastlz
+ffmpeg[avcodec,avdevice,avfilter,avformat,swresample,swscale]
 flatbuffers
 fltk[opengl]
 fluidsynth[buildtools,sndfile]
@@ -219,6 +220,7 @@ nanosvg
 nghttp2
 nghttp3
 ngtcp2
+ogre[assimp,freeimage,openexr,overlay,strict,tools,zip,zziplib]
 openal-soft
 openblas
 openexr
@@ -254,6 +256,16 @@ readline-win32
 robin-hood-hashing
 safeint
 scintilla
+sdl2-gfx
+sdl2-image[libjpeg-turbo,libwebp,tiff]
+sdl2-mixer-ext[ffmpeg,fluidsynth,libadlmidi,libflac,libgme,libmodplug,libopnmidi,libvorbis,libxmp,mpg123,nativemidi,opusfile,timidity,wavpack]
+sdl2-mixer[fluidsynth,libflac,libmodplug,mpg123,opusfile,wavpack]
+sdl2-net
+sdl2-rtf
+sdl2-sound[shared,timidity]
+sdl2-ttf[harfbuzz]
+sdl2[samplerate,vulkan]
+sdl2pp
 sdl3-image[jpeg,png,tiff,webp]
 sdl3-ttf[harfbuzz,svg]
 sdl3[vulkan]
@@ -265,6 +277,7 @@ simage[avienc,giflib,jpeg,oggvorbis,png,sndfile,tiff,zlib]
 simdutf[tools]
 skcrypter
 skia[direct3d,fontconfig,freetype,gl,harfbuzz,icu,vulkan]
+smpeg2
 soil2
 spirv-cross
 spirv-headers
@@ -273,6 +286,7 @@ spirv-tools
 sqlite3[json1]
 stb
 tbb
+tgui[sdl2,sfml,tool]
 tiff[cxx,jpeg,lerc,libdeflate,lzma,tools,zip,zstd]
 tinyexr
 tinyfiledialogs
@@ -307,6 +321,7 @@ vulkan-headers
 vulkan-loader
 vulkan-memory-allocator
 vulkan-memory-allocator-hpp
+vulkan-sdk-components[tools]
 vulkan-tools
 vulkan-utility-libraries
 vulkan-validationlayers
@@ -316,6 +331,7 @@ wil
 wincrypt
 winreg
 wtl
+wxwidgets[debug-support,example,fonts,media,sound,webview]
 xaudio2redist
 xorstr
 yasm-tool-helper
