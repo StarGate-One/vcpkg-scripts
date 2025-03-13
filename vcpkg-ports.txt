@@ -214,12 +214,14 @@ mp3lame
 mpg123
 mpi
 mpir
+ms-gdk
 ms-gsl
 msmpi
 nanosvg
 nghttp2
 nghttp3
 ngtcp2
+nlohmann-json
 ogre[assimp,freeimage,openexr,overlay,strict,tools,zip,zziplib]
 openal-soft
 openblas
