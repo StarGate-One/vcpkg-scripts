@@ -249,7 +249,7 @@ pthreads
 pugixml
 python3
 qoi
-qt5-base
+qt5-base[openssl]]
 quirc
 rapidjson
 raygui
