@@ -122,7 +122,7 @@ gperf
 graphite2
 gsl
 gzip-hpp
-harfbuzz[cairo,freetype,glib,graphite2,icu,introspection]
+harfbuzz[cairo,freetype,glib,graphite2,icu]
 hdf5[szip,zlib]
 hello-imgui[experimental-dx11-binding,experimental-dx12-binding,experimental-vulkan-binding,glfw-binding,opengl3-binding]
 hexl
