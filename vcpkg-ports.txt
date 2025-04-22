@@ -138,7 +138,7 @@ implot
 inih[cpp]
 iniparser
 irrlicht[tools,unicode]
-jasper[opengl]
+jasper
 jbigkit
 jhasse-poly2tri
 json-c
@@ -150,7 +150,7 @@ lapack-reference[blas-select,noblas]
 lcms
 leptonica
 lerc
-libadlmidi[dosbox-emulator,embedded-banks,java-emulator,midi-sequencer,mus,nuked-emulator,opal-emulator,xmi]
+libadlmidi
 libaec
 libarchive[bzip2,crypto,libxml2,lz4,lzma,lzo,zstd]
 libassert
@@ -249,7 +249,7 @@ pthreads
 pugixml
 python3
 qoi
-qt5-base[openssl]]
+qt5-base[openssl]
 quirc
 rapidjson
 raygui
@@ -268,6 +268,9 @@ sdl2-sound[shared,timidity]
 sdl2-ttf[harfbuzz]
 sdl2[samplerate,vulkan]
 sdl2pp
+sdl3[vulkan]
+sdl3-image[jpeg,png,tiff,webp]
+sdl3-ttf[harfbuzz,svg]
 seal[hexl,ms-gsl,no-throw-tran,zlib,zstd]
 sfml
 shaderc

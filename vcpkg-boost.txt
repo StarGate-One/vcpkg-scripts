@@ -22,7 +22,6 @@ boost-circular-buffer
 boost-cmake
 boost-cobalt
 boost-compat
-boost-compatibility
 boost-compute
 boost-concept-check
 boost-config
@@ -57,6 +56,7 @@ boost-gil
 boost-graph
 boost-graph-parallel
 boost-hana
+boost-hash2
 boost-headers
 boost-heap
 boost-histogram
@@ -75,12 +75,10 @@ boost-lambda2
 boost-leaf
 boost-lexical-cast
 boost-local-function
-boost-locale
 boost-locale[icu]
 boost-lockfree
 boost-log
 boost-logic
-boost-math
 boost-math[legacy]
 boost-metaparse
 boost-move
@@ -88,6 +86,7 @@ boost-mp11
 boost-mpi
 boost-mpi[python3]
 boost-mpl
+boost-mqtt5
 boost-msm
 boost-multi-array
 boost-multi-index
@@ -162,7 +161,6 @@ boost-wave
 boost-winapi
 boost-xpressive
 boost-yap
-boost[cobalt,mpi]
 boost[mpi]
 bzip2[tool]
 expat
