@@ -1,5 +1,7 @@
-bext-di
+bext-di[extensions]
 bext-sml
+bext-sml2
+bext-text
 bext-ut
 bext-wintls
 boost-accumulators
@@ -171,7 +173,7 @@ mpi
 msmpi
 openssl[fips,tools]
 pkgconf
-python3
+python3[extensions]
 sqlite3[json1]
 vcpkg-boost
 vcpkg-cmake
