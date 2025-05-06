@@ -213,8 +213,8 @@ mimalloc
 miniaudio
 minimp3
 miniz
-minizip[bzip2]
 minizip-ng[bzip2,lzma,openssl,pkcrypt,wzaes,zlib,zstd]
+minizip[bzip2]
 mmx
 mp3lame
 mpfr
@@ -247,8 +247,8 @@ plutosvg[freetype]
 plutovg
 podofo[fontconfig,fontmanager]
 polyclipping
-protobuf[zlib]
 protobuf-c[test,tools]
+protobuf[zlib]
 pthread
 pthreads
 pugixml
@@ -263,6 +263,8 @@ robin-hood-hashing
 safeint
 scintilla
 sdl3-image[jpeg,png,tiff,webp]
+sdl3-mixer[fluidsynth,libflac,libmodplug,libxmp,mpg123,opusfile,wavpack]
+sdl3-net
 sdl3-ttf[harfbuzz,svg]
 sdl3[vulkan]
 seal[hexl,ms-gsl,no-throw-tran,zlib,zstd]
