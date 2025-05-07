@@ -97,6 +97,7 @@ fastio
 fastlz
 ffmpeg[avcodec,avdevice,avfilter,avformat,swresample,swscale]
 flatbuffers
+flecs
 fltk[opengl]
 fluidsynth[buildtools,sndfile]
 fmt
