@@ -273,6 +273,7 @@ sdl3-image[jpeg,png,tiff,webp]
 sdl3-ttf[harfbuzz,svg]
 sdl3[vulkan]
 seal[hexl,ms-gsl,no-throw-tran,zlib,zstd]
+sfgui
 sfml
 shaderc
 shaderwriter[glsl,hlsl,spirv]
