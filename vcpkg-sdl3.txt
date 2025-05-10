@@ -264,8 +264,6 @@ robin-hood-hashing
 safeint
 scintilla
 sdl3-image[jpeg,png,tiff,webp]
-sdl3-mixer[fluidsynth,libflac,libmodplug,libxmp,mpg123,opusfile,wavpack]
-sdl3-net
 sdl3-ttf[harfbuzz,svg]
 sdl3[vulkan]
 seal[hexl,ms-gsl,no-throw-tran,zlib,zstd]
