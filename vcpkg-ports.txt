@@ -89,6 +89,7 @@ efsw
 egl-registry
 eigen3
 expat
+fast-float
 fastio
 fastlz
 ffmpeg[avcodec,avdevice,avfilter,avformat,swresample,swscale]

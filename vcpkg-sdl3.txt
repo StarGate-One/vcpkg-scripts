@@ -93,6 +93,7 @@ egl-registry
 eigen3
 embree3[filter-function,geometry-curve,geometry-grid,geometry-instance,geometry-point,geometry-quad,geometry-subdivision,geometry-triangle,geometry-user,ray-packets,tasking-tbb]
 expat
+fast-float
 fastio
 fastlz
 ffmpeg[avcodec,avdevice,avfilter,avformat,swresample,swscale]
@@ -197,7 +198,7 @@ libtomcrypt
 libtommath
 libunistring
 libvorbis
-libwebp[anim,cwebp,dwebp,extras,gif2webp,img2webp,info,libbwebpmux,libwebpmux,mux,nearlossless,simd,unicode,vwebp]
+libwebp[anim,cwebp,dwebp,extras,gif2webp,img2webp,info,libwebpmux,mux,nearlossless,simd,unicode,vwebp]
 libxml2[ftp,http,iconv,legacy,lzma,tools,zlib]
 libxmp[depackers,prowizard]
 libyuv
