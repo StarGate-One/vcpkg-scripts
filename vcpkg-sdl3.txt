@@ -51,7 +51,7 @@ cpuinfo[tools]
 crc32c
 cryptopp[pem-pack]
 ctemplate
-curl[brotli,http2,idn2,non-http,openssl,schannel,ssh,ssl,sspi,tool,winssl,zstd]
+curl[brotli,http2,idn2,non-http,openssl,schannel,ssh,ssl,sspi,tool,zstd]
 curlpp
 cwalk
 cxxopts
@@ -125,7 +125,6 @@ glib
 glm
 glslang
 gmp
-gobject-introspection
 gperf
 gperftools[tools]
 graphite2
@@ -320,7 +319,6 @@ vulkan-memory-allocator
 vulkan-memory-allocator-hpp
 vulkan-tools
 vulkan-utility-libraries
-vulkan-validationlayers
 wavpack
 webview2
 wil
