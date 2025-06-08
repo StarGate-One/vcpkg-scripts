@@ -77,7 +77,7 @@
 @set VCPKG_DOWNLOADS=%_DEV_ROOT_DRV%\vcpkg-downloads
 @set VCPKG_ENV_PASSTHROUGH=
 @set VCPKG_ENV_PASSTHROUGH_UNTRACKED=DevDivCodeAnalysisRunType;DOTNET_CLI_TELEMETRY_OPTOUT;DOTNET_TELEMETRY_OPTOUT;MSBUILDPRESERVETOOLTEMPFILES;POWERSHELL_CLI_TELEMETRY_OPTOUT;POWERSHELL_TELEMETRY_OPTOUT;VSCMD_SKIP_SENDTELEMETRY
-@set VCPKG_FEATURE_FLAGS=-binarycaching,-compilertracking,-dependencygraph,-manifests,-registries,-versions
+@rem set VCPKG_FEATURE_FLAGS=-binarycaching,-compilertracking,-dependencygraph,-manifests,-registries,-versions
 @rem set VCPKG_FEATURE_FLAGS=binarycaching,compilertracking,dependencygraph,manifests,registries,versions
 @set VCPKG_FORCE_DOWNLOADED_BINARIES=
 @set VCPKG_FORCE_SYSTEM_BINARIES=

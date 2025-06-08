@@ -125,6 +125,7 @@ glib
 glm
 glslang
 gmp
+gobject-introspection[cairo]
 gperf
 gperftools[tools]
 graphite2
@@ -319,6 +320,7 @@ vulkan-memory-allocator
 vulkan-memory-allocator-hpp
 vulkan-tools
 vulkan-utility-libraries
+vulkan-validationlayers
 wavpack
 webview2
 wil
