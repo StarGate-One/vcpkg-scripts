@@ -51,6 +51,9 @@ cpuinfo[tools]
 crc32c
 cryptopp[pem-pack]
 ctemplate
+cuda
+cuda-api-wrappers
+cudnn
 curl[brotli,http2,idn2,non-http,openssl,schannel,ssh,ssl,sspi,tool,zstd]
 curlpp
 cwalk
@@ -229,6 +232,8 @@ nghttp2
 nghttp3
 ngtcp2
 nlohmann-json
+nvidia-cutlass
+nvtt[cuda]
 openal-soft
 openblas
 openexr
@@ -241,6 +246,7 @@ opusfile
 pcre2[jit,platform-default-features]
 pdcurses
 physfs
+physx
 pixman
 pkgconf
 platform-folders
