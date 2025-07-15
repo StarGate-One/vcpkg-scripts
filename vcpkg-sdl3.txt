@@ -53,6 +53,7 @@ cryptopp[pem-pack]
 ctemplate
 cuda
 cuda-api-wrappers
+cudnn
 curl[brotli,http2,idn2,non-http,openssl,schannel,ssh,ssl,sspi,tool,zstd]
 curlpp
 cwalk
