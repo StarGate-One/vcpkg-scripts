@@ -105,6 +105,7 @@
    -DCMAKE_INSTALL_PREFIX:PATH=%_VCPKG_ROOT_DIR%                ^
    -DCMAKE_MSVC_RUNTIME_LIBRARY=MultiThreaded                   ^
    -DVCPKG_ARTIFACTS_DEVELOPMENT="OFF"                          ^
+  "-DVCPKG_ARTIFACTS_SHA=%_VCPKG_TOOL_CE_SHA%"                  ^
   "-DVCPKG_BASE_VERSION=%_VCPKG_TOOL_LATEST_TAG_REFNAME_DATE%"  ^
    -DVCPKG_BUILD_FUZZING=OFF                                    ^
    -DVCPKG_BUILD_TLS12_DOWNLOADER=OFF                           ^
