@@ -235,8 +235,6 @@ nghttp2
 nghttp3
 ngtcp2
 nlohmann-json
-nvidia-cutlass
-nvtt[cuda]
 openal-soft
 openblas
 opencolorio
@@ -326,7 +324,6 @@ volk
 vs-yasm
 vsg
 vsgimgui
-vtk-m[cuda,double,mpi]
 vulkan
 vulkan-headers
 vulkan-loader
