@@ -54,7 +54,7 @@ ctemplate
 cuda
 cuda-api-wrappers
 cudnn
-curl[brotli,http2,idn2,non-http,openssl,schannel,ssh,ssl,sspi,tool,zstd]
+curl[brotli,http2,idn2,non-http,openssl,ssh,ssl,sspi,tool,zstd]
 curlpp
 cwalk
 cxxopts
