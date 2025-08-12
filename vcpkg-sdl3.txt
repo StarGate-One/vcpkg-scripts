@@ -99,7 +99,8 @@ expat
 fast-float
 fastio
 fastlz
-ffmpeg[avcodec,avdevice,avfilter,avformat,swresample,swscale]
+ffmpeg[avcodec,avdevice,avfilter,avformat,bzip2,dav1d,ffmpeg,fontconfig,freetype,lzma,nvcodec,openssl,ssh,swresample,swscale,webp,xml2,zlib]
+ffnvcodec
 flatbuffers
 flecs
 fltk[opengl]
@@ -164,7 +165,7 @@ leptonica
 lerc
 libadlmidi
 libaec
-libarchive[bzip2,crypto,libxml2,lz4,lzma,lzo,zstd]
+libarchive[bzip2,crypto,lz4,lzma,lzo,zstd]
 libassert
 libavif[aom]
 libconfig
@@ -195,6 +196,7 @@ libsndfile[external-libs,mpeg]
 libsodium
 libsquish
 libssh2[openssl,zlib]
+libssh[pcap,server,zlib]
 libtheora
 libtomcrypt
 libtommath
@@ -204,7 +206,7 @@ libwebp[anim,cwebp,dwebp,extras,gif2webp,img2webp,info,libwebpmux,mux,nearlossle
 libxml2[ftp,http,iconv,legacy,lzma,tools,zlib]
 libxmp[depackers,prowizard]
 libyuv
-libzip[bzip2,commoncrypto,default-aes,liblzma,mbedtls,openssl,wincrypto,zstd]
+libzip[bzip2,default-aes,liblzma,mbedtls,openssl,zstd]
 libzippp[encryption]
 lunarg-vulkantools
 lunasvg
@@ -213,6 +215,7 @@ lzo
 magic-enum
 mathgl[arma,fltk,gif,glut,gsl,hdf5,jpeg,opengl,png,qt5,zlib]
 mbedtls[pthreads]
+mdl-sdk[dds,openimageio]
 mimalloc
 miniaudio
 minimp3
@@ -232,11 +235,14 @@ nghttp2
 nghttp3
 ngtcp2
 nlohmann-json
+nvidia-cutlass
 openal-soft
 openblas
+opencolorio
 openexr
 opengl
 opengl-registry
+openimageio
 openjpeg
 openssl[fips,tools]
 opus[avx2]
@@ -244,6 +250,7 @@ opusfile
 pcre2[jit,platform-default-features]
 pdcurses
 physfs
+physx
 pixman
 pkgconf
 platform-folders
@@ -256,6 +263,7 @@ protobuf[zlib]
 pthread
 pthreads
 pugixml
+pystring
 python3[extensions]
 qoi
 qt5-base[openssl]
@@ -264,6 +272,7 @@ raygui
 raylib[use-audio]
 readline-win32
 robin-hood-hashing
+robin-map
 safeint
 scintilla
 sdl3-image[jpeg,png,tiff,webp]
@@ -271,6 +280,7 @@ sdl3-ttf[harfbuzz,svg]
 sdl3[vulkan]
 seal[hexl,ms-gsl,no-throw-tran,zlib,zstd]
 sfml[audio,graphics,network,window]
+shader-slang
 shaderc
 shaderwriter[glsl,hlsl,spirv]
 simage[avienc,giflib,jpeg,oggvorbis,png,sndfile,tiff,zlib]
@@ -315,6 +325,7 @@ volk
 vs-yasm
 vsg
 vsgimgui
+vtk-m[cuda,double,mpi]
 vulkan
 vulkan-headers
 vulkan-loader
@@ -330,6 +341,7 @@ winreg
 wtl
 xaudio2redist
 xorstr
+yaml-cpp
 yasm-tool-helper
 yasm[tools]
 zlib
