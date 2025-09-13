@@ -44,6 +44,7 @@ clockutils
 color-console
 cpp-base64
 cppfs[ssh]
+cpprestsdk[brotli,compression,core]
 cpptrace
 cpu-features[tools]
 cpuid
@@ -208,6 +209,7 @@ libxmp[depackers,prowizard]
 libyuv
 libzip[bzip2,default-aes,liblzma,mbedtls,openssl,zstd]
 libzippp[encryption]
+lodepng
 lunarg-vulkantools
 lunasvg
 lz4[tools]
@@ -216,6 +218,8 @@ magic-enum
 mathgl[arma,fltk,gif,glut,gsl,hdf5,jpeg,opengl,png,qt5,zlib]
 mbedtls[pthreads]
 mdl-sdk[dds,openimageio]
+meshoptimizer
+mgnlibs
 mimalloc
 miniaudio
 minimp3
