@@ -193,7 +193,7 @@ libusb
 libusb-win32
 libvorbis
 libwebp[anim,cwebp,dwebp,extras,gif2webp,img2webp,info,libwebpmux,mux,nearlossless,simd,swap16bitcsp,unicode,vwebp]
-libxml2[ftp,http,iconv,legacy,lzma,tools,zlib]
+libxml2[ftp,iconv,legacy,tools,zlib]
 libxmp[depackers,prowizard]
 libyuv
 libzip[bzip2,commoncrypto,default-aes,liblzma,mbedtls,openssl,wincrypto,zstd]
