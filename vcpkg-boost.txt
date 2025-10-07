@@ -9,13 +9,14 @@ boost-algorithm
 boost-align
 boost-any
 boost-array
-boost-asio[ssl]
+boost-asio[deadline-timer,spawn,ssl]
 boost-assert
 boost-assign
 boost-atomic
 boost-beast
 boost-bimap
 boost-bind
+boost-bloom
 boost-build
 boost-callable-traits
 boost-charconv
@@ -85,7 +86,6 @@ boost-math[legacy]
 boost-metaparse
 boost-move
 boost-mp11
-boost-mpi
 boost-mpi[python3]
 boost-mpl
 boost-mqtt5

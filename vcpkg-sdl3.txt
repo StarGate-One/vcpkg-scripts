@@ -204,7 +204,7 @@ libtommath
 libunistring
 libvorbis
 libwebp[anim,cwebp,dwebp,extras,gif2webp,img2webp,info,libwebpmux,mux,nearlossless,simd,unicode,vwebp]
-libxml2[ftp,iconv,legacy,tools,zlib]
+libxml2[iconv,legacy,tools,zlib]
 libxmp[depackers,prowizard]
 libyuv
 libzip[bzip2,default-aes,liblzma,mbedtls,openssl,zstd]
@@ -272,7 +272,7 @@ qoi
 qt5-base[openssl]
 rapidjson
 raygui
-raylib[use-audio]
+raylib
 readline-win32
 robin-hood-hashing
 robin-map
