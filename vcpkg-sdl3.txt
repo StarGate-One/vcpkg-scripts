@@ -65,6 +65,7 @@ date[remote-api]
 dav1d
 dbg-macro
 dbghelp
+dbus
 debug-assert
 decimal-for-cpp
 devil[jasper,lcms,libjpeg,libpng,openexr,tiff]
@@ -190,6 +191,7 @@ libogg
 libopnmidi[gens-emulator,mame-ym2608-emulator,mame-ym2612-emulator,midi-sequencer,mus,np2-emulator,nuked-emulator,xmi]
 libpff
 libpng[tools]
+libpq[lz4,openssl,zlib]
 libraw
 libsamplerate
 libsigcpp
@@ -270,6 +272,7 @@ pystring
 python3[extensions]
 qoi
 qt5-base[openssl]
+qtbase[brotli,concurrent,dbus,dnslookup,doubleconversion,freetype,gui,harfbuzz,icu,jpeg,network,opengl,openssl,pcre2,png,sql,sql-psql,sql-sqlite,testlib,thread,vulkan,widgets,zstd]
 rapidjson
 raygui
 raylib
