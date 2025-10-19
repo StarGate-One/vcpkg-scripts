@@ -165,6 +165,7 @@ lapack-reference[blas-select,noblas]
 lcms
 leptonica
 lerc
+lexilla
 libadlmidi
 libaec
 libarchive[bzip2,crypto,lz4,lzma,lzo,zstd]
