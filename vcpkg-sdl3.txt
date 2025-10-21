@@ -250,6 +250,7 @@ opengl
 opengl-registry
 openimageio
 openjpeg
+openjph[tools]
 openssl[fips,tools]
 opus[avx2]
 opusfile
