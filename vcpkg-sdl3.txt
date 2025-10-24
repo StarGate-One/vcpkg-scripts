@@ -106,7 +106,7 @@ ffnvcodec
 flatbuffers
 flecs
 fltk[opengl]
-fluidsynth[buildtools,sndfile]
+fluidsynth[sndfile]
 fmt
 fontconfig[nls,tools]
 freeglut
