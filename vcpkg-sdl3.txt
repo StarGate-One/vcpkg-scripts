@@ -55,6 +55,7 @@ ctemplate
 cuda
 cuda-api-wrappers
 cudnn
+cudnn-frontend
 curl[brotli,http2,idn2,non-http,openssl,ssh,ssl,sspi,tool,zstd]
 curlpp
 cwalk
@@ -242,6 +243,8 @@ nghttp2
 nghttp3
 ngtcp2
 nlohmann-json
+nvidia-cutlass
+nvtt[cuda]
 openal-soft
 openblas
 opencolorio
