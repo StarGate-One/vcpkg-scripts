@@ -57,6 +57,7 @@ cuda-api-wrappers
 cudnn
 cudnn-frontend
 curl[brotli,http2,idn2,non-http,openssl,ssh,ssl,sspi,tool,zstd]
+curlcpp
 curlpp
 cwalk
 cxxopts
