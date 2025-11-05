@@ -22,7 +22,8 @@
 )
 
 @rem set ICACLS_CMD=/grant everyone:(OI)(CI)(F) /C /Q /T
-@set ICACLS_CMD=/grant everyone:(OI)(CI)(F) /C /Q
+@set ICACLS_CMD_1=/grant everyone:(OI)(CI)(F) /C /Q
+@set ICACLS_CMD_2=/grant %USERNAME%:(OI)(CI)(F) /C /Q
 
 @rem Find xcopy
 @for /f "tokens=*" %%g in ('where xcopy.exe') do (@set _VCPKG_XCOPY_EXE=%%g)
@@ -55,11 +56,13 @@
     )
 )
 
-@"%_VCPKG_ICACLS_EXE%" %_VCPKG_TEMP_DIR% %ICACLS_CMD%
+@"%_VCPKG_ICACLS_EXE%" %_VCPKG_TEMP_DIR% %ICACLS_CMD_1%
+@"%_VCPKG_ICACLS_EXE%" %_VCPKG_TEMP_DIR% %ICACLS_CMD_2%
 
 @rem physical downloads directory
 @if not exist %VCPKG_DOWNLOADS% (@mkdir %VCPKG_DOWNLOADS%)
-@"%_VCPKG_ICACLS_EXE%" %VCPKG_DOWNLOADS% %ICACLS_CMD%
+@"%_VCPKG_ICACLS_EXE%" %VCPKG_DOWNLOADS% %ICACLS_CMD_1%
+@"%_VCPKG_ICACLS_EXE%" %VCPKG_DOWNLOADS% %ICACLS_CMD_2%
 
 @rem vcpkg repo
 @set _VCPKG_GIT_REPO=vcpkg
@@ -102,11 +105,11 @@
     @mkdir %_VCPKG_BUILDTREES_DIR%
 )
 
-@if not exist %_VCPKG_DOWNLOADS_DIR% (
-   @if exist %VCPKG_DOWNLOADS% (
-   @mklink /j %_VCPKG_DOWNLOADS_DIR% %VCPKG_DOWNLOADS%
-   )
-)
+@rem if not exist %_VCPKG_DOWNLOADS_DIR% (
+   @rem if exist %VCPKG_DOWNLOADS% (
+   @rem mklink /j %_VCPKG_DOWNLOADS_DIR% %VCPKG_DOWNLOADS%
+   @rem )
+@rem )
 
 @if not exist %_VCPKG_INSTALLED_DIR% (
    @mkdir %_VCPKG_INSTALLED_DIR%
@@ -137,8 +140,11 @@
 
 @cd %_DEV_ROOT_DRV%\
 
-@"%_VCPKG_ICACLS_EXE%" %_VCPKG_ROOT_DIR% %ICACLS_CMD%
-@"%_VCPKG_ICACLS_EXE%" %_VCPKG_OVERLAY_DIR% %ICACLS_CMD%
+@"%_VCPKG_ICACLS_EXE%" %_VCPKG_ROOT_DIR% %ICACLS_CMD_1%
+@"%_VCPKG_ICACLS_EXE%" %_VCPKG_OVERLAY_DIR% %ICACLS_CMD_1%
+
+@"%_VCPKG_ICACLS_EXE%" %_VCPKG_ROOT_DIR% %ICACLS_CMD_2%
+@"%_VCPKG_ICACLS_EXE%" %_VCPKG_OVERLAY_DIR% %ICACLS_CMD_2%
 
 @rem vcpkg-tool repo
 @set _VCPKG_GIT_REPO=vcpkg-tool
@@ -173,7 +179,8 @@
 
 @cd %_DEV_ROOT_DRV%\
 
-@"%_VCPKG_ICACLS_EXE%" %_VCPKG_TOOL_DIR% %ICACLS_CMD%
+@"%_VCPKG_ICACLS_EXE%" %_VCPKG_TOOL_DIR% %ICACLS_CMD_1%
+@"%_VCPKG_ICACLS_EXE%" %_VCPKG_TOOL_DIR% %ICACLS_CMD_2%
 
 :end-script
 @endlocal

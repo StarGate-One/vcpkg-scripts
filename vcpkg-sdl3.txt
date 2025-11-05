@@ -98,7 +98,7 @@ effects11
 efsw
 egl-registry
 eigen3
-embree3[filter-function,geometry-curve,geometry-grid,geometry-instance,geometry-point,geometry-quad,geometry-subdivision,geometry-triangle,geometry-user,ray-packets,tasking-tbb]
+embree[backface-culling,compact-polys,filter-function,geometry-curve,geometry-grid,geometry-instance,geometry-point,geometry-quad,geometry-subdivision,geometry-triangle,geometry-user,ray-mask,ray-packets,tasking-tbb]
 expat
 fast-float
 fastio
