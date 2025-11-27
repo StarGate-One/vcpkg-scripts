@@ -46,7 +46,7 @@
 
 @for /f "tokens=*" %%g in ('"%ProgramFiles(x86)%\Microsoft Visual Studio\Installer\vswhere.exe" -latest -requires Microsoft.VisualStudio.Workload.NativeDesktop -property catalog_productLineVersion') do (@set _DEV_VS_PROPERTY_LINE_VERSION=%%g)
 
-@set _VCPKG_CMAKE_GEN="%_DEV_VS_PROPERTY_NAME% %_DEV_VS_PROPERTY_LINE% %_DEV_VS_PROPERTY_LINE_VERSION%"
+@rem set _VCPKG_CMAKE_GEN="%_DEV_VS_PROPERTY_NAME% %_DEV_VS_PROPERTY_LINE% %_DEV_VS_PROPERTY_LINE_VERSION%"
 
 @set _VCPKG_GIT_FORMAT="--format=%%cd"
 @set _VCPKG_GIT_DATE_FORMAT="--date=format-local:%%Y-%%m-%%d"

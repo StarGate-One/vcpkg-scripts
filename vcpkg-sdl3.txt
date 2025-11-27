@@ -110,7 +110,7 @@ flecs
 fltk[opengl]
 fluidsynth[sndfile]
 fmt
-fontconfig[nls,tools]
+fontconfig[iconv,nls,tools]
 freeglut
 freeimage
 freetype[brotli,bzip2,error-strings,png,subpixel-rendering,zlib]
