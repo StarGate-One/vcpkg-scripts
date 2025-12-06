@@ -304,6 +304,7 @@ spirv-reflect
 spirv-tools
 sqlite3[json1]
 stb
+stringzilla
 tbb
 tgui[sfml,sdl3,tool]
 tiff[cxx,jpeg,lerc,libdeflate,lzma,tools,zip,zstd]
