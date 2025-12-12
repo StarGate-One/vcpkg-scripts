@@ -115,6 +115,7 @@ freeglut
 freeimage
 freetype[brotli,bzip2,error-strings,png,subpixel-rendering,zlib]
 gameinput
+gcem
 getopt
 getopt-win32
 gettext-libintl
