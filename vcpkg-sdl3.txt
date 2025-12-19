@@ -245,6 +245,7 @@ nghttp2
 nghttp3
 ngtcp2
 nlohmann-json
+nvidia-cutlass
 openal-soft
 openblas
 opencolorio
