@@ -135,7 +135,7 @@ glm
 glslang
 gmp
 gperf
-gperftools[tools]
+gperftools
 graphite2
 gsl
 gzip-hpp
