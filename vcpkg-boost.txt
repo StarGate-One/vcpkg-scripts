@@ -97,6 +97,7 @@ boost-mysql
 boost-nowide
 boost-numeric-conversion
 boost-odeint[mpi]
+boost-openmethod
 boost-optional
 boost-outcome
 boost-parameter
