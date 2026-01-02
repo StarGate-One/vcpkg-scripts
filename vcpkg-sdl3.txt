@@ -223,6 +223,7 @@ lzo
 magic-enum
 mathgl[arma,fltk,gif,glut,gsl,hdf5,jpeg,opengl,png,qt5,zlib]
 mbedtls[pthreads]
+md4c
 mdl-sdk[dds,openimageio]
 meshoptimizer
 mgnlibs
