@@ -60,7 +60,7 @@
 
 @if defined PARM_2 (
     @if "%PARM_2%" equ "debug" (
-        @set _VCPKG_DEBUG=--debug --debug-env --x-cmake-args=-DVCPKG_CMAKE_CONFIGURE_OPTIONS=--trace-expand
+        @set _VCPKG_DEBUG=--debug --debug-env --x-cmake-args=-DVCPKG_CMAKE_CONFIGURE_OPTIONS=--trace-expand --cmake-args=-DPORT_DEBUG=ON
     )
     @if "%PARM_2%" equ "dry-run" (
         @set _VCPKG_DRY_RUN=--dry-run

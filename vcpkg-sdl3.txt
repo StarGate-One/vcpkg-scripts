@@ -302,6 +302,7 @@ simdutf[tools]
 skcrypter
 skia[direct3d,fontconfig,freetype,gl,harfbuzz,icu,vulkan]
 soil2
+spdlog[core,fmt,tz-offset]
 spirv-cross
 spirv-headers
 spirv-reflect
