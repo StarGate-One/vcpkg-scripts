@@ -104,6 +104,7 @@ fast-float
 fastio
 fastlz
 ffmpeg[avcodec,avdevice,avfilter,avformat,bzip2,dav1d,ffmpeg,fontconfig,freetype,lzma,nvcodec,openssl,ssh,swresample,swscale,webp,xml2,zlib]
+ffmpeg-bin2c
 ffnvcodec
 flatbuffers
 flecs
