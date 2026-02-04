@@ -21,7 +21,7 @@ b64
 bddisasm
 berkeleydb
 better-enums
-bgfx[multithreaded]
+bgfx[multithreaded,tools]
 bigint
 bit7z[regex-matching]
 blake3[tbb]
