@@ -72,6 +72,11 @@
 @set _VCPKG_GIT_PULL=pull upstream %_VCPKG_GIT_BRANCH% -a -f
 @set _VCPKG_GIT_PUSH=push --all -f
 
+@if exist %LOCALAPPDATA%\vcpkg (
+    @rmdir /q /s %LOCALAPPDATA%\vcpkg
+    @timeout /T 5 > nul
+)
+
 @if exist %_VCPKG_ROOT_DIR% (
     @rmdir /q /s %_VCPKG_ROOT_DIR%
     @timeout /T 5 > nul

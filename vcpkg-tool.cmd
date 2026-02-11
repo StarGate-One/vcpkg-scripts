@@ -135,12 +135,12 @@
     @if exist %_VCPKG_TOOL_EXE% (
         @rem %_VCPKG_TOOL_EXE% integrate remove --binarysource=%VCPKG_BINARY_SOURCES% --downloads-root=%_VCPKG_DOWNLOADS_DIR% --host-triplet=%VCPKG_DEFAULT_HOST_TRIPLET% --overlay-ports=%_VCPKG_OVERLAY_PORTS% --overlay-triplets=%_VCPKG_OVERLAY_TRIPLETS% --triplet=%VCPKG_DEFAULT_TRIPLET% --vcpkg-root=%_VCPKG_ROOT_DIR% --x-asset-sources=%X_VCPKG_ASSET_SOURCES% --x-buildtrees-root=%_VCPKG_BUILDTREES_DIR% --x-install-root=%_VCPKG_INSTALLED_DIR% 
         @%_VCPKG_TOOL_EXE% integrate remove --downloads-root=%_VCPKG_DOWNLOADS_DIR% --host-triplet=%VCPKG_DEFAULT_HOST_TRIPLET% --overlay-ports=%_VCPKG_OVERLAY_PORTS% --overlay-triplets=%_VCPKG_OVERLAY_TRIPLETS% --triplet=%VCPKG_DEFAULT_TRIPLET% --vcpkg-root=%_VCPKG_ROOT_DIR% --x-asset-sources=%X_VCPKG_ASSET_SOURCES% --x-buildtrees-root=%_VCPKG_BUILDTREES_DIR% --x-install-root=%_VCPKG_INSTALLED_DIR% 
-        @del /F /Q %_VCPKG_TOOL_EXE%
+        @rem del /F /Q %_VCPKG_TOOL_EXE%
         @timeout /T 5 > nul
     )
-    @copy %_VCPKG_TOOL_BUILD_EXE% %_VCPKG_TOOL_EXE%
-    @timeout /T 5 > nul
-    @cd %_VCPKG_ROOT_DIR%
+    @rem copy %_VCPKG_TOOL_BUILD_EXE% %_VCPKG_TOOL_EXE%
+    @rem timeout /T 5 > nul
+    @rem cd %_VCPKG_ROOT_DIR%
     %_VCPKG_TOOL_EXE% version
     @if not exist %_VCPKG_DISABLE_METRICS_FILE% (
         @echo. 1>%_VCPKG_DISABLE_METRICS_FILE% 2>&1
