@@ -84,6 +84,11 @@
     @set _VCPKG_TOOL_LATEST_TAG_REFNAME_DATE=%file_current-date%
 )
 
+@if exist %LOCALAPPDATA%\vcpkg (
+    @rmdir /q /s %LOCALAPPDATA%\vcpkg
+    @timeout /T 5 > nul
+)
+
 @if exist %_VCPKG_TOOL_BUILD_DIR% (
     @rmdir /q /s %_VCPKG_TOOL_BUILD_DIR%
     @timeout /T 5 > nul
@@ -151,6 +156,26 @@
     @rem %_VCPKG_TOOL_EXE% integrate install --binarysource=%VCPKG_BINARY_SOURCES% --downloads-root=%_VCPKG_DOWNLOADS_DIR% --host-triplet=%VCPKG_DEFAULT_HOST_TRIPLET% --overlay-ports=%_VCPKG_OVERLAY_PORTS% --overlay-triplets=%_VCPKG_OVERLAY_TRIPLETS% --triplet=%VCPKG_DEFAULT_TRIPLET% --vcpkg-root=%_VCPKG_ROOT_DIR% --x-asset-sources=%X_VCPKG_ASSET_SOURCES% --x-buildtrees-root=%_VCPKG_BUILDTREES_DIR% --x-install-root=%_VCPKG_INSTALLED_DIR%
 
     @%_VCPKG_TOOL_EXE% integrate install --downloads-root=%_VCPKG_DOWNLOADS_DIR% --host-triplet=%VCPKG_DEFAULT_HOST_TRIPLET% --overlay-ports=%_VCPKG_OVERLAY_PORTS% --overlay-triplets=%_VCPKG_OVERLAY_TRIPLETS% --triplet=%VCPKG_DEFAULT_TRIPLET% --vcpkg-root=%_VCPKG_ROOT_DIR% --x-asset-sources=%X_VCPKG_ASSET_SOURCES% --x-buildtrees-root=%_VCPKG_BUILDTREES_DIR% --x-install-root=%_VCPKG_INSTALLED_DIR%
+)
+
+@if exist %_VCPKG_TMP_DIR% (
+    @rmdir /q /s %_VCPKG_TMP_DIR%
+    @timeout /T 5 > nul
+)
+
+@if not exist %_VCPKG_TMP_DIR% (
+    @mkdir %_VCPKG_TMP_DIR%
+    @timeout /T 5 > nul
+)
+
+@if exist %_VCPKG_PACKAGES_DIR% (
+    @rmdir /q /s %_VCPKG_PACKAGES_DIR%
+    @timeout /T 5 > nul
+)
+
+@if not exist %_VCPKG_PACKAGES_DIR% (
+    @mkdir %_VCPKG_PACKAGES_DIR%
+    @timeout /T 5 > nul
 )
 
 :end-script

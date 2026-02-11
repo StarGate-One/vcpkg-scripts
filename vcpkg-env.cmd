@@ -28,6 +28,7 @@
 @set _VCPKG_GIT_DIR=%_DEV_ROOT_DRV%\Projects\Git
 @set _VCPKG_ROOT_DIR=%_DEV_ROOT_DRV%\vcpkg
 @set _VCPKG_TEMP_DIR=%_DEV_TEMP_DIR%
+@set _VCPKG_TMP_DIR=%_DEV_TEMP_DIR%\tmp
 @set _VCPKG_OVERLAY_DIR=%_DEV_ROOT_DRV%\vcpkg-overlays
 @set _VCPKG_TOOL_DIR=%_DEV_ROOT_DRV%\vcpkg-tool
 
