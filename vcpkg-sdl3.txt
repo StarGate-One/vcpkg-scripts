@@ -175,7 +175,6 @@ libaec
 libarchive[bzip2,crypto,lz4,lzma,lzo,zstd]
 libassert
 libavif[aom]
-libb2
 libconfig
 libdeflate[compression,decompression,gzip,zlib]
 libdisasm

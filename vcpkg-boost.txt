@@ -168,6 +168,7 @@ boost[mpi]
 bzip2[tool]
 expat
 icu[tools]
+libb2
 libffi
 liblzma[tools]
 mpi
