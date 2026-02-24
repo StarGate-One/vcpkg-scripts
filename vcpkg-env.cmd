@@ -102,6 +102,7 @@
 @set VCPKG_USE_NUGET_CACHE=
 @set VCPKG_VISUAL_STUDIO_PATH=%VSINSTALLDIR:~0,-1%
 @set VCPKG_XBOX_CONSOLE_TARGET=
+@set VSCMD_SKIP_SENDTELEMETRY=1
 @set X_VCPKG_APPINSTALL_DEPS_INSTALL=ON
 @set X_VCPKG_ASSET_SOURCES=clear
 
@@ -122,6 +123,8 @@
 @set POWERSHELL_TELEMETRY_OPTOUT=1
 @set PSHOME=%_VCPKG_TEMP_DIR%\pshome
 @rem set PSModulePath=C:\Program Files\PowerShell\7\Modules;C:\Program Files\WindowsPowerShell\Modules;C:\Program Files (x86)\Microsoft SQL Server\160\Tools\PowerShell\Modules\;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules;%PSHOME%
+
+@set PATH=%_VCPKG_TOOL_BUILD_DIR%\Release;%PATH%
 
 @set PSModulePath=%PSModulePath%;%PSHOME%
 
