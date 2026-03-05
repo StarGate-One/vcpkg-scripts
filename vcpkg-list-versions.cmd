@@ -17,9 +17,9 @@
 @echo. >>%_VCPKG_LOG%
 
 @call %_VCPKG_GIT_SCRIPTS_DIR%\vcpkg-version.cmd
-@echo Vcpkg Version [%_vcpkg_version%] >>%_VCPKG_LOG% 2>>&1
+@echo Vcpkg-Tool Version [%_vcpkg_version%] >>%_VCPKG_LOG% 2>>&1
 @call %_VCPKG_GIT_SCRIPTS_DIR%\vcpkg-scripts-version.cmd
-@echo Vcpkg Scripts Version [%_VCPKG_SCRIPTS_VERSION%] >>%_VCPKG_LOG% 2>>&1
+@echo Vcpkg-Scripts Version [%_VCPKG_SCRIPTS_VERSION%] >>%_VCPKG_LOG% 2>>&1
 @echo. >>%_VCPKG_LOG%
 
 @call %_VCPKG_GIT_SCRIPTS_DIR%\cpp-version.cmd
