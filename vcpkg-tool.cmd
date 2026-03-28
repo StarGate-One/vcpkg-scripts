@@ -107,8 +107,9 @@
    -DBUILD_TESTS=OFF                                            ^
    -DCMAKE_BUILD_TYPE=Release                                   ^
    -DCMAKE_VERBOSE_MAKEFILE=ON                                  ^
-   -DCMAKE_INSTALL_PREFIX:PATH=%_VCPKG_ROOT_DIR%                ^
+  "-DCMAKE_INSTALL_PREFIX:PATH=%_VCPKG_ROOT_DIR%"               ^
    -DCMAKE_MSVC_RUNTIME_LIBRARY=MultiThreaded                   ^
+  "-DCMAKE_TOOLCHAIN_FILE=%CMAKE_TOOLCHAIN_FILE%"               ^
    -DVCPKG_ARTIFACTS_DEVELOPMENT="OFF"                          ^
   "-DVCPKG_ARTIFACTS_SHA=%_VCPKG_TOOL_CE_SHA%"                  ^
   "-DVCPKG_BASE_VERSION=%_VCPKG_TOOL_LATEST_TAG_REFNAME_DATE%"  ^
@@ -121,7 +122,7 @@
    -DVCPKG_MSVC_ANALYZE=OFF                                     ^
    -DVCPKG_OFFICIAL_BUILD=ON                                    ^
   "-DVCPKG_STANDALONE_BUNDLE_SHA=%_VCPKG_TOOL_CE_SHA%"          ^
-   -DVCPKG_VERSION=%_VCPKG_TOOL_CE_SHA%                         ^
+  "-DVCPKG_VERSION=%_VCPKG_TOOL_CE_SHA%"                        ^
    -DVCPKG_WARNINGS_AS_ERRORS=ON
 
 @rem goto :end-script
