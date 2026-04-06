@@ -30,7 +30,7 @@
 )
 :cont-2
 @rem set _VCPKG_FMT_URL=https://github.com/fmtlib/fmt/archive/refs/tags/10.2.1.tar.gz
-@set _VCPKG_FMT_URL=https://github.com/fmtlib/fmt/archive/refs/tags/11.0.2.tar.gz
+@set _VCPKG_FMT_URL=https://github.com/fmtlib/fmt/archive/refs/tags/12.1.0.tar.gz
 @set _VCPKG_CMAKERC_URL=https://github.com/vector-of-bool/cmrc/archive/refs/tags/2.0.1.tar.gz
 
 @call %_VCPKG_GIT_SCRIPTS_DIR%\date-time.cmd
