@@ -103,8 +103,8 @@ expat
 fast-float
 fastio
 fastlz
-ffmpeg[avcodec,avdevice,avfilter,avformat,bzip2,dav1d,ffmpeg,fontconfig,freetype,lzma,nvcodec,openssl,ssh,swresample,swscale,webp,xml2,zlib]
 ffmpeg-bin2c
+ffmpeg[avcodec,avdevice,avfilter,avformat,bzip2,dav1d,ffmpeg,fontconfig,freetype,lzma,nvcodec,openssl,ssh,swresample,swscale,webp,xml2,zlib]
 ffnvcodec
 flatbuffers
 flecs
@@ -291,6 +291,7 @@ safeint
 scintilla
 sdl3-image[jpeg,png,tiff,webp]
 sdl3-mixer[fluidsynth,libflac,libvorbis,libxmp,mpg123,opusfile,wavpack]
+sdl3-shadercross
 sdl3-ttf[harfbuzz,svg]
 sdl3[vulkan]
 seal[hexl,ms-gsl,no-throw-tran,zlib,zstd]
