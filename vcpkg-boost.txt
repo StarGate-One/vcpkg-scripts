@@ -39,6 +39,7 @@ boost-coroutine
 boost-coroutine2
 boost-crc
 boost-date-time
+boost-decimal
 boost-describe
 boost-detail
 boost-dll
