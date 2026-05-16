@@ -209,6 +209,7 @@ libtheora
 libtomcrypt
 libtommath
 libunistring
+libusb
 libvorbis
 libwebp[anim,cwebp,dwebp,extras,gif2webp,img2webp,info,libwebpmux,mux,nearlossless,simd,unicode,vwebp]
 libxml2[iconv,legacy,tools,zlib]
@@ -293,7 +294,7 @@ sdl3-image[jpeg,png,tiff,webp]
 sdl3-mixer[fluidsynth,libflac,libvorbis,libxmp,mpg123,opusfile,wavpack]
 sdl3-shadercross
 sdl3-ttf[harfbuzz,svg]
-sdl3[vulkan]
+sdl3[libusb,vulkan]
 seal[hexl,ms-gsl,no-throw-tran,zlib,zstd]
 sfml[audio,graphics,network,window]
 shader-slang
