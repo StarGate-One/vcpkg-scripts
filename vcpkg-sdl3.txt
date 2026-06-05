@@ -44,7 +44,6 @@ clockutils
 color-console
 cpp-base64
 cppfs[ssh]
-cpprestsdk[brotli,compression,core]
 cpptrace
 cpu-features[tools]
 cpuid
