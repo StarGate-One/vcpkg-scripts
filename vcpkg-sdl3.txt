@@ -374,6 +374,13 @@ physx
 pixman
 pkgconf
 platform-folders
+plf-colony
+plf-hive
+plf-indiesort
+plf-list
+plf-nanotimer
+plf-queue
+plf-stack
 plutosvg[freetype]
 plutovg
 polyclipping
