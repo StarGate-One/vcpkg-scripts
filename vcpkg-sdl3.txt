@@ -242,6 +242,7 @@ ffmpeg-bin2c
 ffmpeg[avcodec,avdevice,avfilter,avformat,bzip2,dav1d,ffmpeg,fontconfig,freetype,lzma,nvcodec,openssl,ssh,swresample,swscale,version3,webp,xml2,zlib]
 ffnvcodec
 flatbuffers
+flecs
 fluidsynth
 fmt
 fontconfig[iconv]
