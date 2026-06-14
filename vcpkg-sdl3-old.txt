@@ -76,7 +76,7 @@ directx-headers
 directx12-agility
 directxmath[dx11,dx12,xdsp]
 directxmesh[dx12,spectre,tools]
-directxtex[dx11,dx12,openexr,spectre,tools]
+directxtex[dx11,dx12,jpeg,openexr,png,spectre,tools]
 directxtk12[gameinput,spectre,tools,xaudio2-9,xaudio2redist]
 directxtk[gameinput,spectre,tools,xaudio2-8,xaudio2-9,xaudio2redist]
 dirent
