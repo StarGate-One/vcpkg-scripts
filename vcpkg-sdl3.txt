@@ -184,6 +184,7 @@ catch2
 cgltf
 check
 chipmunk
+cjson
 clockutils
 color-console
 cpp-base64
@@ -286,6 +287,7 @@ irrlicht[tools,unicode]
 jasper
 jbigkit
 jhasse-poly2tri
+json-c
 jsoncpp
 jxrlib
 kubazip
