@@ -265,7 +265,6 @@ glfw3
 gli
 glm
 glslang
-gmp
 gperf
 gsl
 harfbuzz[freetype]
@@ -310,6 +309,7 @@ libidn2
 libigl[embree,glfw,opengl,xml]
 libjpeg-turbo
 libjxl
+libltdl
 liblzma
 libmodplug
 libogg
@@ -351,6 +351,7 @@ mmx
 mp3lame
 mpg123
 mpi
+mpir
 ms-gdk
 ms-gsl
 msmpi
