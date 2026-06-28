@@ -277,7 +277,7 @@ icu[tools]
 imath
 imgui-node-editor
 imgui-sfml
-imgui[docking-experimental,dx11-binding,dx12-binding,freetype,freetype-svg,glfw-binding,glut-binding,libigl-imgui,opengl3-binding,sdl3-binding,sdl3-renderer-binding,sdlgpu3-binding,test-engine,vulkan-binding,wchar32,win32-binding]
+imgui[docking-experimental,dx11-binding,dx12-binding,freetype,glfw-binding,glut-binding,libigl-imgui,opengl3-binding,sdl3-binding,sdl3-renderer-binding,sdlgpu3-binding,test-engine,vulkan-binding,wchar32,win32-binding]
 imguizmo
 implot
 inih[cpp]
