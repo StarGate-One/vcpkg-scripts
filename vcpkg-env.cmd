@@ -51,9 +51,7 @@
 @set _VCPKG_DISABLE_METRICS_FILE=%_VCPKG_ROOT_DIR%\vcpkg.disable-metrics
 @set _VCPKG_EXE=vcpkg.exe
 @set _VCPKG_TOOL_BUILD_EXE=%_VCPKG_TOOL_BUILD_DIR%\Release\%_VCPKG_EXE%
-@set _VCPKG_TOOL_EXE=%_VCPKG_TOOL_BUILD_EXE%
-@set _VCPKG_TOOL_TEMP_EXE=%_VCPKG_ROOT_DIR%\%_VCPKG_EXE%
-@rem set _VCPKG_TOOL_EXE=%_VCPKG_ROOT_DIR%\%_VCPKG_EXE%
+@set _VCPKG_TOOL_EXE=%_VCPKG_ROOT_DIR%\%_VCPKG_EXE%
 
 @set _VCPKG_GIT_LOCAL_OVERLAY_DIR=%_VCPKG_GIT_DIR%\vcpkg-overlays
 @set _VCPKG_GIT_LOCAL_OVERLAY_PORTS=%_VCPKG_GIT_LOCAL_OVERLAY_DIR%\ports
@@ -124,7 +122,7 @@
 @set PSHOME=%_VCPKG_TEMP_DIR%\pshome
 @rem set PSModulePath=C:\Program Files\PowerShell\7\Modules;C:\Program Files\WindowsPowerShell\Modules;C:\Program Files (x86)\Microsoft SQL Server\160\Tools\PowerShell\Modules\;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules;%PSHOME%
 
-@set PATH=%_VCPKG_TOOL_BUILD_DIR%\Release;%PATH%
+@rem set PATH=%_VCPKG_TOOL_BUILD_DIR%\Release;%PATH%
 
 @set PSModulePath=%PSModulePath%;%PSHOME%
 
