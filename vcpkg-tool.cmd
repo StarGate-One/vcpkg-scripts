@@ -30,7 +30,7 @@
 )
 :cont-2
 @rem set _VCPKG_FMT_URL=https://github.com/fmtlib/fmt/archive/refs/tags/10.2.1.tar.gz
-@set _VCPKG_FMT_URL=https://github.com/fmtlib/fmt/archive/refs/tags/12.1.0.tar.gz
+@set _VCPKG_FMT_URL=https://github.com/fmtlib/fmt/archive/refs/tags/12.2.0.tar.gz
 @set _VCPKG_CMAKERC_URL=https://github.com/vector-of-bool/cmrc/archive/refs/tags/2.0.1.tar.gz
 
 @call %_VCPKG_GIT_SCRIPTS_DIR%\date-time.cmd
@@ -56,6 +56,11 @@
 @cd %_DEV_ROOT_DRV%\
 
 @cd %_VCPKG_ROOT_DIR%
+
+@if exist %_VCPKG_TOOL_EXE% (
+    del /F /Q %_VCPKG_TOOL_EXE%
+)
+@timeout /T 5 > nul
 
 @call bootstrap-vcpkg.bat
 
@@ -101,33 +106,37 @@
 @if not exist %_VCPKG_TOOL_BUILD_DIR% (@mkdir %_VCPKG_TOOL_BUILD_DIR%)
 
 @rem Build the vcpkg.exe source code
-@"%_VCPKG_CMAKE_EXE%"                                           ^
-   -A %VSCMD_ARG_TGT_ARCH%                                      ^
-   -B "%_VCPKG_TOOL_BUILD_DIR%"                                 ^
-   -S %_VCPKG_TOOL_DIR%                                         ^
-   -G %_VCPKG_CMAKE_GEN%                                        ^
-   -T %_VCPKG_PLATFORM_TOOLSET%                                 ^
-   -DBUILD_TESTING=OFF                                          ^
-   -DBUILD_TESTS=OFF                                            ^
-   -DCMAKE_BUILD_TYPE=Release                                   ^
-   -DCMAKE_VERBOSE_MAKEFILE=ON                                  ^
-  "-DCMAKE_INSTALL_PREFIX:PATH=%_VCPKG_ROOT_DIR%"               ^
-   -DCMAKE_MSVC_RUNTIME_LIBRARY=MultiThreaded                   ^
-  "-DCMAKE_TOOLCHAIN_FILE=%CMAKE_TOOLCHAIN_FILE%"               ^
-   -DVCPKG_ARTIFACTS_DEVELOPMENT="OFF"                          ^
-  "-DVCPKG_ARTIFACTS_SHA=%_VCPKG_TOOL_CE_SHA%"                  ^
-  "-DVCPKG_BASE_VERSION=%_VCPKG_TOOL_LATEST_TAG_REFNAME_DATE%"  ^
-   -DVCPKG_BUILD_FUZZING=OFF                                    ^
-   -DVCPKG_BUILD_TLS12_DOWNLOADER=OFF                           ^
-  "-DVCPKG_CMAKERC_URL=%_VCPKG_CMAKERC_URL%"                    ^
-   -DVCPKG_DEVELOPMENT_WARNINGS=ON                              ^
-   -DVCPKG_EMBED_GIT_SHA=ON                                     ^
-  "-DVCPKG_FMT_URL=%_VCPKG_FMT_URL%"                            ^
-   -DVCPKG_MSVC_ANALYZE=OFF                                     ^
-   -DVCPKG_OFFICIAL_BUILD=ON                                    ^
-  "-DVCPKG_STANDALONE_BUNDLE_SHA=%_VCPKG_TOOL_CE_SHA%"          ^
-  "-DVCPKG_VERSION=%_VCPKG_TOOL_CE_SHA%"                        ^
-   -DVCPKG_WARNINGS_AS_ERRORS=ON
+@"%_VCPKG_CMAKE_EXE%"                                            ^
+  -A "%VSCMD_ARG_TGT_ARCH%"                                      ^
+  -B "%_VCPKG_TOOL_BUILD_DIR%"                                   ^
+  -D BUILD_TESTING=OFF                                           ^
+  -D BUILD_TESTS=OFF                                             ^
+  -D CMAKE_BUILD_TYPE=Release                                    ^
+  -D CMAKE_INSTALL_PREFIX:PATH="%_VCPKG_ROOT_DIR%"               ^
+  -D CMAKE_MSVC_RUNTIME_LIBRARY=MultiThreaded                    ^
+  -D CMAKE_TOOLCHAIN_FILE="%CMAKE_TOOLCHAIN_FILE%"               ^
+  -D CMAKE_VERBOSE_MAKEFILE=ON                                   ^
+  -D VCPKG_ADD_SOURCELINK=ON                                     ^
+  -D VCPKG_ARTIFACTS_DEVELOPMENT=OFF                             ^
+  -D VCPKG_ARTIFACTS_SHA="%_VCPKG_TOOL_CE_SHA%"                  ^
+  -D VCPKG_BASE_VERSION="%_VCPKG_TOOL_LATEST_TAG_REFNAME_DATE%"  ^
+  -D VCPKG_BUILD_FUZZING=OFF                                     ^
+  -D VCPKG_BUILD_TLS12_DOWNLOADER=OFF                            ^
+  -D VCPKG_CMAKERC_URL="%_VCPKG_CMAKERC_URL%"                    ^
+  -D VCPKG_DEVELOPMENT_WARNINGS=ON                               ^
+  -D VCPKG_EMBED_GIT_SHA=ON                                      ^
+  -D VCPKG_FMT_URL="%_VCPKG_FMT_URL%"                            ^
+  -D VCPKG_FUZZER_INSTRUMENTATION=OFF                            ^
+  -D VCPKG_MSVC_ANALYZE=OFF                                      ^
+  -D VCPKG_OFFICIAL_BUILD=ON                                     ^
+  -D VCPKG_PDB_SUFFIX=""                                         ^
+  -D VCPKG_STANDALONE_BUNDLE_SHA="%_VCPKG_TOOL_CE_SHA%"          ^
+  -D VCPKG_TARGET_TRIPLET=x64-windows-static-release             ^
+  -D VCPKG_VERSION="%_VCPKG_TOOL_CE_SHA%"                        ^
+  -D VCPKG_WARNINGS_AS_ERRORS=ON                                 ^
+  -G %_VCPKG_CMAKE_GEN%                                          ^
+  -S "%_VCPKG_TOOL_DIR%"                                         ^
+  -T "%_VCPKG_PLATFORM_TOOLSET%"
 
 @rem goto :end-script
 
@@ -146,14 +155,10 @@
         @rem %_VCPKG_TOOL_EXE% integrate remove --binarysource=%VCPKG_BINARY_SOURCES% --downloads-root=%_VCPKG_DOWNLOADS_DIR% --host-triplet=%VCPKG_DEFAULT_HOST_TRIPLET% --overlay-ports=%_VCPKG_OVERLAY_PORTS% --overlay-triplets=%_VCPKG_OVERLAY_TRIPLETS% --triplet=%VCPKG_DEFAULT_TRIPLET% --vcpkg-root=%_VCPKG_ROOT_DIR% --x-asset-sources=%X_VCPKG_ASSET_SOURCES% --x-buildtrees-root=%_VCPKG_BUILDTREES_DIR% --x-install-root=%_VCPKG_INSTALLED_DIR% 
         @%_VCPKG_TOOL_EXE% integrate remove --downloads-root=%_VCPKG_DOWNLOADS_DIR% --host-triplet=%VCPKG_DEFAULT_HOST_TRIPLET% --overlay-ports=%_VCPKG_OVERLAY_PORTS% --overlay-triplets=%_VCPKG_OVERLAY_TRIPLETS% --triplet=%VCPKG_DEFAULT_TRIPLET% --vcpkg-root=%_VCPKG_ROOT_DIR% --x-asset-sources=%X_VCPKG_ASSET_SOURCES% --x-buildtrees-root=%_VCPKG_BUILDTREES_DIR% --x-install-root=%_VCPKG_INSTALLED_DIR% 
         @rem del /F /Q %_VCPKG_TOOL_EXE%
-        @if exist %_VCPKG_TOOL_EXE% (
-            del /F /Q %_VCPKG_TOOL_EXE%
-            del /F /Q %_VCPKG_ROOT_DIR%\*.dll
-        )
+        del /F /Q %_VCPKG_TOOL_EXE%
         @timeout /T 5 > nul
     )
     @copy /Y %_VCPKG_TOOL_BUILD_EXE% %_VCPKG_TOOL_EXE%
-    @copy /Y %_VCPKG_TOOL_BUILD_DIR%\Release\*.dll %_VCPKG_ROOT_DIR%
     @timeout /T 5 > nul
     @cd %_VCPKG_ROOT_DIR%
     %_VCPKG_TOOL_EXE% version
