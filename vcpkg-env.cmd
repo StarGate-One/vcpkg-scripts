@@ -124,6 +124,8 @@
 
 @rem set PATH=%_VCPKG_TOOL_BUILD_DIR%\Release;%PATH%
 
+@set PATH=%VCPKG_ROOT%;%PATH%
+
 @set PSModulePath=%PSModulePath%;%PSHOME%
 
 @set PreferredToolArchitecture=%Platform%
