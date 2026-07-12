@@ -110,11 +110,11 @@
     @mkdir %_VCPKG_BUILDTREES_DIR%
 )
 
-@rem if not exist %_VCPKG_DOWNLOADS_DIR% (
-   @rem if exist %VCPKG_DOWNLOADS% (
-   @rem mklink /j %_VCPKG_DOWNLOADS_DIR% %VCPKG_DOWNLOADS%
-   @rem )
-@rem )
+@if not exist %_VCPKG_DOWNLOADS_DIR% (
+   @if exist %VCPKG_DOWNLOADS% (
+   @mklink /j %_VCPKG_DOWNLOADS_DIR% %VCPKG_DOWNLOADS%
+   )
+)
 
 @if not exist %_VCPKG_INSTALLED_DIR% (
    @mkdir %_VCPKG_INSTALLED_DIR%

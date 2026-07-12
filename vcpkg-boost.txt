@@ -1,6 +1,5 @@
 bext-di[extensions]
 bext-sml
-bext-sml2
 bext-text
 bext-ut
 bext-wintls

@@ -69,7 +69,7 @@
 
 @rem set _VCPKG_CMD=%_VCPKG_TOOL_EXE% install --binarysource=%VCPKG_BINARY_SOURCES% --clean-buildtrees-after-build --clean-packages-after-build --no-print-usage --downloads-root=%_VCPKG_DOWNLOADS_DIR% --host-triplet=%VCPKG_DEFAULT_HOST_TRIPLET% --keep-going --overlay-ports=%_VCPKG_OVERLAY_PORTS% --overlay-triplets=%_VCPKG_OVERLAY_TRIPLETS% --recurse --triplet=%VCPKG_DEFAULT_TRIPLET% --vcpkg-root=%_VCPKG_ROOT_DIR% --x-asset-sources=%X_VCPKG_ASSET_SOURCES% --x-buildtrees-root=%_VCPKG_BUILDTREES_DIR% --x-install-root=%_VCPKG_INSTALLED_DIR%
 
-@set _VCPKG_CMD=%_VCPKG_TOOL_EXE% install --classic --clean-buildtrees-after-build --clean-packages-after-build --no-print-usage --downloads-root=%_VCPKG_DOWNLOADS_DIR% --host-triplet=%VCPKG_DEFAULT_HOST_TRIPLET% --keep-going --overlay-ports=%_VCPKG_OVERLAY_PORTS% --overlay-triplets=%_VCPKG_OVERLAY_TRIPLETS% --recurse --triplet=%VCPKG_DEFAULT_TRIPLET% --vcpkg-root=%_VCPKG_ROOT_DIR% --x-asset-sources=%X_VCPKG_ASSET_SOURCES% --x-buildtrees-root=%_VCPKG_BUILDTREES_DIR% --x-install-root=%_VCPKG_INSTALLED_DIR%
+@set _VCPKG_CMD=%_VCPKG_TOOL_EXE% install --classic --clean-buildtrees-after-build --clean-packages-after-build --no-print-usage --downloads-root=%VCPKG_DOWNLOADS% --host-triplet=%VCPKG_DEFAULT_HOST_TRIPLET% --keep-going --overlay-ports=%_VCPKG_OVERLAY_PORTS% --overlay-triplets=%_VCPKG_OVERLAY_TRIPLETS% --recurse --triplet=%VCPKG_DEFAULT_TRIPLET% --vcpkg-root=%_VCPKG_ROOT_DIR% --x-asset-sources=%X_VCPKG_ASSET_SOURCES% --x-buildtrees-root=%_VCPKG_BUILDTREES_DIR% --x-install-root=%_VCPKG_INSTALLED_DIR%
 
 @rem set _VCPKG_CMD=%_VCPKG_TOOL_EXE% install --recurse --keep-going --no-print-usage --editable
 
@@ -91,13 +91,14 @@
 
 @%_VCPKG_CMD% >>%_VCPKG_LOG% 2>>&1
 
-@rem echo %_VCPKG_TOOL_EXE% install --recurse --keep-going --clean-buildtrees-after-build --clean-packages-after-build --no-print-usage --overlay-triplets=%_VCPKG_OVERLAY_TRIPLETS% --overlay-ports=%_VCPKG_OVERLAY_PORTS% %_VCPKG_DRY_RUN% %_VCPKG_DEBUG% "@%_VCPKG_PORTS%" >>%_VCPKG_LOG% 2>>&1
+@rem echo %_VCPKG_TOOL_EXE% install --recurse --keep-going --clean-buildtrees-after-build --clean-packages-after-build --no-print-usage  %_VCPKG_DRY_RUN% %_VCPKG_DEBUG% --overlay-triplets=%_VCPKG_OVERLAY_TRIPLETS% --overlay-ports=%_VCPKG_OVERLAY_PORTS% "@%_VCPKG_PORTS%" >>%_VCPKG_LOG% 2>>&1
 @echo. >>%_VCPKG_LOG%
 
-@::%_VCPKG_TOOL_EXE% install --recurse --keep-going --debug --debug-env --clean-buildtrees-after-build --clean-packages-after-build --no-print-usage --x-cmake-args=-DVCPKG_CMAKE_CONFIGURE_OPTIONS=--trace-expand --overlay-triplets=%_VCPKG_OVERLAY_TRIPLETS% --overlay-ports=%_VCPKG_OVERLAY_PORTS% "@%_VCPKG_PORTS%" >>%_VCPKG_LOG% 2>>&1
+@::%_VCPKG_TOOL_EXE% install --recurse --keep-going --debug --debug-env --clean-buildtrees-after-build --clean-packages-after-build --no-print-usage --x-cmake-args=-DVCPKG_CMAKE_CONFIGURE_OPTIONS=--trace-expand  --overlay-triplets=%_VCPKG_OVERLAY_TRIPLETS% --overlay-ports=%_VCPKG_OVERLAY_PORTS% "@%_VCPKG_PORTS%" >>%_VCPKG_LOG% 2>>&1
 
 @rem %_VCPKG_TOOL_EXE% install --recurse --keep-going --clean-buildtrees-after-build --clean-packages-after-build --no-print-usage %_VCPKG_DRY_RUN% %_VCPKG_DEBUG% --overlay-triplets=%_VCPKG_OVERLAY_TRIPLETS% --overlay-ports=%_VCPKG_OVERLAY_PORTS% "@%_VCPKG_PORTS%" >>%_VCPKG_LOG% 2>>&1
 
 ::%_VCPKG_TOOL_EXE% install --recurse --keep-going --no-print-usage --overlay-triplets=%_VCPKG_OVERLAY_TRIPLETS% --overlay-ports=%_VCPKG_OVERLAY_PORTS% "@%_VCPKG_PORTS%" >>%_VCPKG_LOG% 2>>&1
+
 :end-script
 @endlocal
