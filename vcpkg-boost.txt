@@ -58,7 +58,7 @@ boost-geometry
 boost-gil
 boost-graph
 boost-graph-parallel
-boost-hana
+boost-hana[large-struct-macros]
 boost-hash2
 boost-headers
 boost-heap
