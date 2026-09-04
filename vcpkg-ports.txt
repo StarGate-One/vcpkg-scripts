@@ -99,8 +99,8 @@ ffmpeg-bin2c
 ffmpeg[avcodec,avdevice,avfilter,avformat,bzip2,dav1d,fontconfig,freetype,lzma,nvcodec,openssl,ssh,swresample,swscale,version3,webp,xml2,zlib]
 ffnvcodec
 flatbuffers
-fltk[opengl]
 flecs
+fltk[opengl]
 fluidsynth[sndfile]
 fmt
 fontconfig[iconv]
@@ -233,8 +233,8 @@ nghttp3
 ngtcp2
 nlohmann-json
 nvidia-cutlass
-opencolorio
 openblas
+opencolorio
 openexr
 opengl
 opengl-registry
@@ -287,6 +287,7 @@ sdl3[libusb,vulkan]
 seal[hexl,ms-gsl,no-throw-tran,zlib,zstd]
 sfgui
 sfml[audio,graphics,network,window]
+sfparse
 shader-slang
 shaderc
 shaderwriter[glsl,hlsl,spirv]
