@@ -80,7 +80,6 @@ double-conversion
 draco
 drlibs
 dstorage
-dx
 dxsdk-d3dx
 dxut[spectre]
 eabase
@@ -188,6 +187,7 @@ libsamplerate
 libsigcpp
 libsndfile[external-libs,mpeg]
 libsodium
+libspng
 libsquish
 libssh2[openssl,zlib]
 libssh[pcap,server,zlib]

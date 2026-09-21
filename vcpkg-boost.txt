@@ -171,6 +171,7 @@ icu[tools]
 libb2
 libffi
 liblzma[tools]
+mpdecimal
 mpi
 msmpi
 openssl[fips,tools]
