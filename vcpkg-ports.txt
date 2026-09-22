@@ -258,6 +258,7 @@ plf-list
 plf-nanotimer
 plf-queue
 plf-stack
+plf-tools
 plutosvg[freetype]
 plutovg
 podofo[fontconfig,fontmanager]
