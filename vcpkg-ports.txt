@@ -38,6 +38,7 @@ cjson
 clockutils
 color-console
 cpp-base64
+cpp-unicodelib
 cppfs[ssh]
 cpptrace
 cpu-features[tools]
@@ -292,6 +293,7 @@ sfparse
 shader-slang
 shaderc
 shaderwriter[glsl,hlsl,spirv]
+sheenbidi
 simage[avienc,giflib,jpeg,oggvorbis,png,sndfile,tiff,zlib]
 simdutf[tools]
 skcrypter
@@ -334,6 +336,7 @@ vulkan-utility-libraries
 vulkan-validationlayers
 wavpack
 webview2
+wepoll
 wil
 wincrypt
 winreg
