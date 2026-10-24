@@ -166,6 +166,7 @@ boost-xpressive
 boost-yap
 boost[mpi]
 bzip2[tool]
+bzip3
 expat
 icu[tools]
 libb2
