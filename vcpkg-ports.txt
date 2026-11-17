@@ -105,7 +105,6 @@ fluidsynth[sndfile]
 fmt
 fontconfig[iconv]
 freeglut
-freeimage
 freetype[brotli,bzip2,error-strings,png,subpixel-rendering,zlib]
 gameinput
 gcem
