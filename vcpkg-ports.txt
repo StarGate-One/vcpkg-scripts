@@ -279,6 +279,7 @@ robin-hood-hashing
 robin-map
 safeint
 scintilla
+sdl-painter[vulkan]
 sdl3-image[avif,jpeg,jxl,png,tiff,webp]
 sdl3-mixer[fluidsynth,libflac,libvorbis,libxmp,mpg123,opusfile,wavpack]
 sdl3-net
