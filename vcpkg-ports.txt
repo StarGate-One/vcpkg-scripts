@@ -287,6 +287,7 @@ sdl3-net
 sdl3-shadercross
 sdl3-ttf[harfbuzz,svg]
 sdl3[libusb,vulkan]
+sdl3pp[image,mixer,ttf]
 seal[hexl,ms-gsl,no-throw-tran,zlib,zstd]
 sfgui
 sfml[audio,graphics,network,window]
